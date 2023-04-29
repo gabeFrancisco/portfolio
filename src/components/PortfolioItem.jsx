@@ -2,7 +2,7 @@ import React from "react";
 
 export default function PortfolioItem({ title, imgUrl, stack, description }) {
   return (
-    <div className="border-2 border-stone-700 rounded-md mt-2 shadow-2xl drop-shadow-2xl">
+    <div className="border-2 border-stone-400 rounded-md mt-2 shadow-2xl drop-shadow-2xl">
       <img
         src={imgUrl}
         alt="portfolio"
