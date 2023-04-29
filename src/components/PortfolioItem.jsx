@@ -9,7 +9,7 @@ export default function PortfolioItem({ title, imgUrl, stack, description }) {
         className="w-full md:h-48 object-contain cursor-pointer p-7"
       />
       <div className="w-full p-4">
-        <h3 className="text-lg md:text-xl mb-2 md:mb-3 font-semibold">
+        <h3 className="text-lg md:text-xl mb-2 md:mb-3 font-semibold dark:text-white">
           {title}
         </h3>
 

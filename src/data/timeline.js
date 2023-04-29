@@ -30,7 +30,7 @@ export default [
   {
     year: "2021",
     title: "ASP.Net Core MVC e WebApi avançados",
-    details: "Como dito anteriormente, C# é a linaguagem que mais domino. Então nesse ano resolvi me especializar ainda mais nas tecnologias do ecosistema .NET. Com os cursos dos grandes professores, José Macoratti e Marcos Rosa aprendi conceitos avançados de Padrões de Projeto, Padrão MVC, Domain Driven Design, SOLID e arquitetura de software em geral, com foco em aplicações comerciais. Também aprendi e expandi meus conhecimentos sobre ORMs como Entity Framework e modelagem de dados. Com foco também em desenvolvimento de APIs, aprendi tudo sobre o procolo HTTP, bem como a interface RESTful."
+    details: "Como dito anteriormente, C# é a linaguagem que mais domino. Então nesse ano resolvi me especializar ainda mais nas tecnologias do ecosistema .NET. Com os cursos dos grandes professores, Elias Ribeiro, José Macoratti e Marcos Rosa aprendi conceitos avançados de Padrões de Projeto, Padrão MVC, Domain Driven Design, SOLID e arquitetura de software em geral, com foco em aplicações comerciais. Também aprendi e expandi meus conhecimentos sobre ORMs como Entity Framework e modelagem de dados. Com foco também em desenvolvimento de APIs, aprendi tudo sobre o procolo HTTP, bem como a interface RESTful."
   },
   {
     year: "2021",

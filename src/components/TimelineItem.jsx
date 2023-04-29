@@ -10,7 +10,7 @@ export default function TimelineItem({ year, title, details }) {
 						<span className="inline-block px-2 py-1 font-semibold text-white bg-stone-900 rounded-md">
 							{year}
 						</span>
-						<h3 className="text-lg font-semibold text-stone-900">
+						<h3 className="text-lg font-semibold text-stone-900 dark:text-white">
 							{title}
 						</h3>
 					</p>

@@ -1,12 +1,14 @@
 import React from "react";
 import timeline from "../data/timeline";
 import TimelineItem from "./TimelineItem";
+import Title from "./Title";
 
 export default function Timeline() {
   return (
     <>
       <div className="flex flex-col md:flex-row justify-center my-20">
         <div className="grid p-8 m-6 grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-7">
+          <Title>Linha do tempo do meu aprendizado</Title>
           {timeline.map((timeline) => (
             <TimelineItem
               year={timeline.year}
