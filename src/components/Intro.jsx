@@ -33,9 +33,14 @@ export default function Intro() {
 
         <p>
           Então.. dê uma olhada no meu{" "}
-          <a href="https://github.com/gabeFrancisco" target="_blank" 
-          className="text-cyan-600 hover:underline underline-offset-2 decoration-2 decoration-cyan-600">Github</a> e veja meus
-          projetos!
+          <a
+            href="https://github.com/gabeFrancisco"
+            target="_blank"
+            className="text-cyan-600 hover:underline underline-offset-2 decoration-2 decoration-cyan-600"
+          >
+            Github
+          </a>{" "}
+          e veja meus projetos!
         </p>
       </div>
     </>
