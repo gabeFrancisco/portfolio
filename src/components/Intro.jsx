@@ -5,7 +5,7 @@ export default function Intro() {
     <>
       <div className="flex items-center justify-center flex-col text-center pt-20 pb-6">
         <h1 className="text-4xl md:text-7x1 mb-1 md:mb-3 font-bold dark:text-white">
-          Gabe Dev
+          Olá, me chamo Gabriel Francisco
         </h1>
         <p className="text-base md:text-xl mb-3 font-medium font-bold">
           Desenvolvedor Fullstack
