@@ -2,19 +2,19 @@ export default [
   {
     title: "Dr. Chave",
     desc: "Primeiro projeto completo e funcional. Um gerenciador de chaves automotivas para chaveiros",
-    imgUrl: "/assets/drkey.png",
+    imgUrl: "/portfolio/assets/drkey.png",
     stack: [".NET/WinForms", "Flutter", "MySql"],
   },
   {
     title: "Invoice Issuer",
     desc: "Um programa fictício para gerenciar notas fiscais de serviço",
-    imgUrl: "/assets/invoice.png",
+    imgUrl: "/portfolio/assets/invoice.png",
     stack: ["ASP.Net Core", "MySql"],
   },
   {
     title: "Redux Storage",
     desc: "App em React feita para fixar meus estudos com a biblioteca de gerenciamento de estados Redux, bem como intregração com API Node.JS(Express) e PostgreSQL",
-    imgUrl: "/assets/reactredux.png",
+    imgUrl: "/portfolio/assets/reactredux.png",
     stack: ["React.JS", "Express/NodeJS", "PostgreSQL"],
   },
   {

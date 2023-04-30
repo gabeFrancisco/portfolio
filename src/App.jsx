@@ -5,6 +5,7 @@ import Timeline from "./components/Timeline";
 import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Title from "./components/Title";
 
 function App() {
   const [theme, setTheme] = useState(null);
@@ -68,7 +69,7 @@ function App() {
       <button
         type="button"
         onClick={handleThemeSwtich}
-        className="fixed z-10 right-20 top-4 bg-purple-300 text-lg p-2 rounded-lg dark:bg-yellow-300"
+        className="fixed z-10 right-5 md:right-10 top-4 bg-purple-300 text-lg p-1 rounded-lg dark:bg-yellow-300"
       >
         {theme === "dark" ? sun : moon}
       </button>
@@ -76,6 +77,7 @@ function App() {
       <div className="bg-white dark:bg-stone-900 dark:text-stone-300 text-stone-900 min-h-screen font-inter">
         <div className="max-w-5x1 w-11/12 mx-auto">
           <Intro />
+          <Title>Meus projetos</Title>
           <Portfolio />
           <Timeline />
           <Contact />

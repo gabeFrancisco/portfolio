@@ -32,7 +32,7 @@ export default function Contact() {
             <a
               href="https://getform.io/"
               target="_blank"
-              className="underline text-blue-600 hover:text-blue-800 visited:text-blue-600"
+              className="underline text-blue-700 hover:text-blue-500 visited:text-blue-700 dark:text-blue-600 dark:hover:text-blue-300 dark:visited:text-violet-400"
             >
               GetForm.io
             </a>
@@ -43,7 +43,8 @@ export default function Contact() {
           w-max text-base font-medium 
           rounded-md text-white bg-gradient-to-r from-blue-600 
           to-cyan-500 drop-shadow-md 
-          hover:stroke-white"
+          hover:stroke-white hover:bg-gradient-to-r hover:from-blue-700 
+          hover:to-cyan-600"
           >
             Enviar!
           </button>
