@@ -1,8 +1,12 @@
-import React from "react";
+import React, { Suspense } from "react";
+import { Canvas } from "@react-three/fiber";
 
-export default function TimelineItem({ year, title, details }) {
+import Python from './models/Python'
+import { OrbitControls } from "@react-three/drei";
+
+export default function TimelineItem({ year, title, details, model }) {
   return (
-    <div>
+    <div className="flex sm:flex-col lg:flex-row items-center">
       <ol className="flex flex-col md-flex-row relative border-l border-stone-200">
         <li className="mb-10 ml-4">
           <div className="absolute w-3 h-3 bg-stone-200 rounded-full mt-1.5 -left-1.5 border border-white" />
@@ -17,6 +21,15 @@ export default function TimelineItem({ year, title, details }) {
           <p className="my-2 text-base font-normal text-stone-500">{details}</p>
         </li>
       </ol>
+      <div className="m-20">
+        <Canvas>
+          <ambientLight />
+          <OrbitControls/>
+          <Suspense fallback={null}>
+            <Python/>
+          </Suspense>
+        </Canvas>
+      </div>
     </div>
   );
 }
