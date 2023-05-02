@@ -14,6 +14,7 @@ export default function Timeline() {
               year={timeline.year}
               title={timeline.title}
               details={timeline.details}
+              model={timeline.model}
             />
           ))}
         </div>
