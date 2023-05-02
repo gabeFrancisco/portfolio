@@ -7,6 +7,7 @@ import {
   Environment,
   Center,
   Sparkles,
+  CubeCamera,
 } from "@react-three/drei";
 
 export default function TimelineItem({ year, title, details, model }) {
@@ -38,7 +39,7 @@ export default function TimelineItem({ year, title, details, model }) {
           <Environment preset="warehouse" blur={17} />
           {/* <Sparkles count={300} size={0.3} scale={4}/> */}
           <Center scale={0.8}>
-            {model}
+            <Suspense fallback={null}>{model}</Suspense>
           </Center>
         </Canvas>
       </div>

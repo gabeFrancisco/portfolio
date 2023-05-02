@@ -10,14 +10,41 @@ export default function Model(props) {
   const { nodes, materials } = useGLTF('/assets/models/csharp.glb')
   return (
     <group {...props} dispose={null}>
-      <group rotation={[-Math.PI / 2, -1.04, 0]} scale={[1, 0.14, 1]}>
-        <mesh geometry={nodes.Cylinder_1.geometry} material={materials['Material.001']} />
-        <mesh geometry={nodes.Cylinder_2.geometry} material={materials['Material.002']} />
-        <mesh geometry={nodes.Cylinder_3.geometry} material={materials['Material.003']} />
-      </group>
-      <mesh geometry={nodes.Text.geometry} material={nodes.Text.material} position={[-0.09, 0.03, 0.11]} rotation={[1.57, 0, 0]} scale={1.44} />
-      <mesh geometry={nodes.Text001.geometry} material={nodes.Text001.material} position={[0.45, -0.06, 0.21]} rotation={[Math.PI / 2, 0, 0]} scale={0.5} />
+    <group position={[0.05, 3.56, -1.39]} scale={0.58}>
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Cylinder_1.geometry}
+        material={materials["Material.001"]}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Cylinder_2.geometry}
+        material={materials["Material.002"]}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Cylinder_3.geometry}
+        material={materials["Material.003"]}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Text001.geometry}
+        material={nodes.Text001.material}
+        position={[3.87, 0.23, 1.37]}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Text.geometry}
+        material={nodes.Text.material}
+        position={[-0.33, 0.18, 0.71]}
+      />
     </group>
+  </group>
   )
 }
 
