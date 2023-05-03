@@ -37,8 +37,8 @@ export default [
   },
    {
     title: 'Portfólio',
-    desc: 'Não preciso nem descrever hahaha você está navegando nele agora ;)',
+    desc: 'Você estã acessando ele agora, porém o ponto importante aqui é a inserção de modelos em 3D usando a biblioteca Three.JS e Fiber. Os logos das tecnologias foram feitos por mim através do Blender 3D.',
     imgUrl: '/portfolio/assets/portfolio.png',
-    stack: ['React', 'Tailwind', 'Vite']
+    stack: ['React', 'Tailwind', 'Vite', 'Three.JS']
   },
 ];

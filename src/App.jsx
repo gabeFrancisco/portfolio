@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Suspense } from "react";
 
 import Intro from "./components/Intro";
 import Timeline from "./components/Timeline";
@@ -6,6 +6,7 @@ import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Title from "./components/Title";
+
 
 function App() {
   const [theme, setTheme] = useState(null);
@@ -77,6 +78,7 @@ function App() {
       <div className="bg-white dark:bg-stone-900 dark:text-stone-300 text-stone-900 min-h-screen font-inter">
         <div className="max-w-5x1 w-11/12 mx-auto">
           <Intro />
+          
           <Title>Meus projetos</Title>
           <Portfolio />
           <Timeline />

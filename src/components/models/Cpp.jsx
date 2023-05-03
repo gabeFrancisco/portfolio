@@ -7,13 +7,13 @@ import React, { useRef } from "react";
 import { useGLTF } from "@react-three/drei";
 
 export default function Model(props) {
-  const { nodes, materials } = useGLTF("/assets/models/cpp.glb");
+  const { nodes, materials } = useGLTF("/portfolio/assets/models/cpp.glb");
   return (
     <group {...props} dispose={null}>
       <group
-        position={[0.66, -0.16, 0.5]}
+        position={[0, 0, 0]}
         rotation={[-1.57, 0, -1.67]}
-        scale={[3.76, 0.56, 3.76]}
+        scale={[0.1, 0.015, 0.1]}
       >
         <mesh
           castShadow
@@ -30,33 +30,12 @@ export default function Model(props) {
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.Text002.geometry}
+          geometry={nodes.Cylinder001_2.geometry}
           material={materials["Material.004"]}
-          position={[-0.05, 0.81, -0.19]}
-          rotation={[-3.14, 0, 3.11]}
-          scale={[0.66, 6.48, 0.66]}
-        />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.Text001.geometry}
-          material={materials["Material.004"]}
-          position={[-0.05, 0.81, -0.19]}
-          rotation={[-3.14, 0, 3.11]}
-          scale={[0.66, 6.48, 0.66]}
-        />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.Text.geometry}
-          material={materials["Material.004"]}
-          position={[0.73, 0.55, -0.45]}
-          rotation={[-3.14, 0, 3.11]}
-          scale={[1.42, 17.69, 1.42]}
         />
       </group>
     </group>
   );
 }
 
-useGLTF.preload("/assets/models/cpp.glb");
+useGLTF.preload("/portfolio/assets/models/cpp.glb");

@@ -1,17 +1,51 @@
-import React from "react";
+import React, { Suspense } from "react";
 import Me from "../../public/assets/me.png";
+import { Canvas } from "@react-three/fiber";
+import {
+  Center,
+  Environment,
+  OrbitControls,
+} from "@react-three/drei";
+import Pc from "../components/models/Pc";
 
 export default function Intro() {
   return (
     <>
-      <div className="p-3 flex flex-col items-center lg:flex-row lg:p-10 mb-10  justify-center">
-        <div className="p-10 lg:p-20">
+      <div className="p-3 flex flex-col items-center lg:flex-row lg:p-10 mb-10  justify-center ">
+        <div className="p-10 lg:p-20 flex flex-col items-center">
           <img
-            className="w-64 lg:w-80 border-4 rounded-full border-slate-300 object-fill shadow-xl"
+            className="w-64 lg:w-80 border-4 rounded-full border-slate-300 object-fill shadow-xl "
             src={Me}
             alt=""
           />
+          <div className="m-10">
+            <Canvas
+              camera={{
+                fov: 90,
+                near: 0.2,
+                far: 3000,
+                position: [0, 2, 4],
+              }}
+            >
+              <OrbitControls enableZoom={false} enablePan={false} autoRotate autoRotateSpeed={3}/>
+              {/* <Float
+                speed={1}
+                rotationIntensity={1}
+                floatIntensity={1.3}
+                floatingRange={[0, 0.2]}
+              > */}
+              <Environment preset="warehouse" />
+              <Center scale={5}>
+                <Suspense fallback={null}>
+                  <Pc/>
+                </Suspense>
+              </Center>
+              {/* </Float> */}
+            </Canvas>
+          </div>
+         
         </div>
+
         <div className="flex items-center justify-center flex-col text-center pt-20 pb-6 px-10">
           <h1 className="text-4xl md:text-7x1 mb-1 md:mb-3 font-bold dark:text-white">
             Olá, me chamo Gabriel Francisco
