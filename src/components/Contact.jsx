@@ -17,10 +17,10 @@ export default function Contact() {
             type="text"
             name="name"
             placeholder="Nome"
-            className="my-2 p-4 bg-transparent border-2 rounded-md focus:outline-none"
+            className="my-2 p-4 bg-transparent border border-slate-400 dark:border-slate-300 rounded-md focus:outline-none"
           />
           <textarea
-            className="my-2 p-4 bg-transparent border-2 rounded-md focus:outline-none"
+            className="my-2 p-4 bg-transparent border border-slate-400 dark:border-slate-300 rounded-md focus:outline-none"
             name="message"
             placeholder="Escreva sua mensagem aqui!"
             id=""

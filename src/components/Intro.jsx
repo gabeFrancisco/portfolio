@@ -1,48 +1,17 @@
 import React, { Suspense } from "react";
 import Me from "../../public/assets/me.png";
-import { Canvas } from "@react-three/fiber";
-import {
-  Center,
-  Environment,
-  OrbitControls,
-} from "@react-three/drei";
-import Pc from "../components/models/Pc";
 
 export default function Intro() {
   return (
     <>
-      <div className="p-3 flex flex-col items-center lg:flex-row lg:p-10 mb-10  justify-center ">
+      <div className="p-3 flex flex-col items-center lg:flex-row lg:p-10 mb-10  justify-center">
         <div className="p-10 lg:p-20 flex flex-col items-center">
           <img
-            className="w-64 lg:w-80 border-4 rounded-full border-slate-300 object-fill shadow-xl "
+            className="w-64 lg:w-80 border-4 rounded-full border-slate-300 object-fill shadow-xl glass"
             src={Me}
             alt=""
           />
-          <div className="m-10">
-            <Canvas
-              camera={{
-                fov: 90,
-                near: 0.2,
-                far: 3000,
-                position: [0, 2, 4],
-              }}
-            >
-              <OrbitControls enableZoom={false} enablePan={false} autoRotate autoRotateSpeed={3}/>
-              {/* <Float
-                speed={1}
-                rotationIntensity={1}
-                floatIntensity={1.3}
-                floatingRange={[0, 0.2]}
-              > */}
-              <Environment preset="warehouse" />
-              <Center scale={5}>
-                <Suspense fallback={null}>
-                  <Pc/>
-                </Suspense>
-              </Center>
-              {/* </Float> */}
-            </Canvas>
-          </div>
+          
          
         </div>
 
@@ -70,12 +39,12 @@ export default function Intro() {
             Então, quando fiz 18, depois de longos anos sem contato com
             computação, reascendi a minha paixão quando tive meu primeiro
             contato com Python. E como de costume, as nossas primeiras linhas de
-            código nós nunca esqeucemos. Decidi finalmente que ser programador
+            código nós nunca esquecemos. Decidi finalmente que ser programador
             era a minha missão. Programar me fazia e, ainda me faz me sentir
             vivo!
           </p>
 
-          <p>
+          {/* <p>
             Então.. dê uma olhada no meu{" "}
             <a
               href="https://github.com/gabeFrancisco"
@@ -85,7 +54,7 @@ export default function Intro() {
               Github
             </a>{" "}
             e veja meus projetos!
-          </p>
+          </p> */}
         </div>
       </div>
     </>

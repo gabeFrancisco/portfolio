@@ -7,6 +7,14 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Title from "./components/Title";
 
+import { Canvas } from "@react-three/fiber";
+import {
+  Center,
+  Environment,
+  OrbitControls,
+  PresentationControls,
+} from "@react-three/drei";
+import Pc from "./components/models/Pc";
 
 function App() {
   const [theme, setTheme] = useState(null);
@@ -75,10 +83,27 @@ function App() {
         {theme === "dark" ? sun : moon}
       </button>
 
-      <div className="bg-white dark:bg-stone-900 dark:text-stone-300 text-stone-900 min-h-screen font-inter">
+      <div className="bg-gradient-to-r from-slate-50 to-indigo-200 dark:bg-gradient-to-r dark:from-gray-900 dark:to-sky-900 dark:text-stone-300 text-stone-900 min-h-screen font-inter">
         <div className="max-w-5x1 w-11/12 mx-auto">
           <Intro />
-          
+          {/* <div className="three-view">
+            <Canvas>
+              <Environment preset="warehouse" />
+              <Center scale={20}>
+                <Suspense fallback={null}>
+                  <PresentationControls
+                    global
+                    polar={[-0.1, 0.1]}
+                    azimuth={[-0.2, 0.2]}
+                  >
+                    <OrbitControls>
+                      <Pc />
+                    </OrbitControls>
+                  </PresentationControls>
+                </Suspense>
+              </Center>
+            </Canvas>
+          </div> */}
           <Title>Meus projetos</Title>
           <Portfolio />
           <Timeline />

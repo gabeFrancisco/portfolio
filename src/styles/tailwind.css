@@ -2,14 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
-.pc iframe{
-  width: 1000px;
-  height: 1000px;
+.bg-white2 {
+  background-color: cadetblue;
+}
+
+.pc iframe {
+  width: 122rem;
+  height: 102rem;
   border: none;
-  border-radius:50px;
+  border-radius: 50px;
   overflow: hidden;
+  position: relative
+}
+
+.three-view {
+  margin: 3rem 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.glass {
+  /* background: rgba(37, 37, 37, 0.35); */
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  /* border-radius: 10px; */
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
