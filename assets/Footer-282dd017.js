@@ -1,0 +1,1 @@
+import{j as e}from"./index-10ac5cf0.js";function r(){return e.jsx("div",{className:"py-5 text-center",children:e.jsxs("p",{className:"text-sm mt-2 opacity-50",children:["© ",new Date().getFullYear()," - Portfólio desenvolvido por Gabriel Francisco"]})})}export{r as default};
