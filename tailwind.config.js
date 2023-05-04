@@ -5,7 +5,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        inter: ["inter", "serif"],
+        inter: ["source sans pro", "serif"],
       },
     },
     backdropFilter: {
@@ -13,5 +13,5 @@ export default {
       blur: "blur(20px)",
     },
   },
-  plugins: [],
+  plugins: [require("tailwindcss-filters")],
 };

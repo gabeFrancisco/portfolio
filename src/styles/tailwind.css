@@ -2,14 +2,50 @@
 @tailwind components;
 @tailwind utilities;
 
+@keyframes Fade {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 100%;
+  }
+}
+
+/* @keyframes LogoScale{
+  0%{
+    width: 15vw;
+    height: auto;
+  }
+  100%{
+    width: 18vw;
+    height: auto;
+  }
+} */
+
+.logo{
+  /* animation: LogoScale 31s ease; */
+  width: 12vw;
+  height: auto;
+}
+
 html {
   scroll-behavior: smooth;
+  /* font-family: 'Raleway', sans-serif; */
+}
+
+.main{
+  animation: Fade 1s forwards;
+}
+
+.dark{
+  animation: Fade 0.5s forwards;
 }
 
 .bg-white2 {
   background-color: cadetblue;
 }
 
+/* 
 .pc iframe {
   width: 122rem;
   height: 102rem;
@@ -23,13 +59,57 @@ html {
   margin: 3rem 0;
   width: 100vw;
   height: 100vh;
+} */
+
+.rotate {
+  font-weight: bold;
+  transform: rotate3d(.15, -.700, 0, 15deg) rotate(1deg) scale(1);
+  transition: transform .3s ease;
+  box-shadow:
+    2em 4em 6em -2em rgba(0,0,0,.5),
+    1em 2em 3.5em -2.5em rgba(0,0,0,.5);
+}
+
+.rotate:hover{
+  transform:
+  rotate3d(.2,.2,.2,0deg)
+  rotate(3deg)
+  scale(1.2)
 }
 
 .glass {
   /* background: rgba(37, 37, 37, 0.35); */
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(6px);
+  box-shadow: 3px 3px 20px 3px rgba(44, 111, 174, 0.37);
+  backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(6px);
   /* border-radius: 10px; */
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  /* border: 1px solid rgba(255, 255, 255, 0.18); */
+}
+
+.text-gradient {
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+::-webkit-scrollbar {
+  width: 10px;
+  width: 0.9rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #1a4a6bb4;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(26, 74, 107, 1);
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(20, 59, 84)
 }

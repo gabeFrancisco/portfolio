@@ -13,6 +13,7 @@ export default function Portfolio() {
             imgUrl={project.imgUrl}
             stack={project.stack}
             description={project.desc}
+            github={project.github}
           />
         ))}
       </div>

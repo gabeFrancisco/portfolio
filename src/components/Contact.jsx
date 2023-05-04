@@ -5,7 +5,7 @@ export default function Contact() {
   return (
     <div className="flex flex-col mb-10 mx-auto flex justify-center">
       <div className="flex justify-center items-center m-7">
-        <Title>Gostou do meu perfil? Entre em contato ;)</Title>
+        <Title>Gostou do meu perfil? Entre em contato!</Title>
       </div>
       <div className="flex justify-center items-center">
         <form
@@ -43,6 +43,8 @@ export default function Contact() {
           w-max text-base font-medium 
           rounded-md text-white bg-gradient-to-r from-blue-600 
           to-cyan-500 drop-shadow-md 
+          dark:bg-gradient-to-r dark:from-gray-800
+          dark:dark:to-sky-700 drop-shadow-md 
           hover:stroke-white hover:bg-gradient-to-r hover:from-blue-700 
           hover:to-cyan-600"
           >

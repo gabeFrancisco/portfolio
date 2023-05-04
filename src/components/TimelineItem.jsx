@@ -1,15 +1,11 @@
 import React, { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 
-import Python from "./models/Python";
 import {
   OrbitControls,
   Environment,
   Center,
-  Sparkles,
-  CubeCamera,
   Float,
-  SpotLight,
 } from "@react-three/drei";
 
 export default function TimelineItem({ year, title, details, model }) {
@@ -17,6 +13,7 @@ export default function TimelineItem({ year, title, details, model }) {
     <div className="flex flex-col lg:flex-row items-center">
       <div className="m-7 h-60">
         <Canvas>
+        <Suspense fallback={null}>
           <Float
             speed={3}
             rotationIntensity={2}
@@ -34,19 +31,20 @@ export default function TimelineItem({ year, title, details, model }) {
             <Environment preset="studio" />
             {/* <Sparkles count={300} size={0.3} scale={4}/> */}
             <Center scale={25}>
-              <Suspense fallback={null}>{model}</Suspense>
+              {model}
             </Center>
           </Float>
+          </Suspense>
         </Canvas>
       </div>
       <ol className="flex flex-col md-flex-row relative border-l border-stone-200">
         <li className="mb-10 ml-4">
-          <div className="absolute w-3 h-3 bg-stone-300 rounded-full mt-1.5 -left-1.5 border border-white" />
+          <div className="absolute w-3 h-3 bg-stone-900 rounded-full mt-1.5 -left-1.5 border-slate-900 dark:border-white dark:border-white dark:bg-white" />
           <p className="flex flex-wrap gap-4 flex-row items-center justify-start text-xs md:text-sm">
             <span className="inline-block px-2 py-1 font-semibold text-white bg-slate-900 dark:text-slate-900 dark:bg-white rounded-md">
               {year}
             </span>
-            <h3 className="text-lg font-semibold text-stone-900 dark:text-white">
+            <h3 className="text-lg font-semibold text-stone-900 dark:text-white ">
               {title}
             </h3>
           </p>

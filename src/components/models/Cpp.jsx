@@ -4,16 +4,17 @@ Command: npx gltfjsx@6.1.4 cpp.glb
 */
 
 import React, { useRef } from "react";
-import { useGLTF } from "@react-three/drei";
+import { useGLTF, Center } from "@react-three/drei";
 
 export default function Model(props) {
   const { nodes, materials } = useGLTF("/portfolio/assets/models/cpp.glb");
   return (
     <group {...props} dispose={null}>
+      <Center scale={0.25}>
       <group
-        position={[0, 0, 0]}
+        position={[0,0,0]}
         rotation={[-1.57, 0, -1.67]}
-        scale={[0.1, 0.015, 0.1]}
+        scale={[0.5, 0.07, 0.5]}
       >
         <mesh
           castShadow
@@ -30,10 +31,32 @@ export default function Model(props) {
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.Cylinder001_2.geometry}
+          geometry={nodes.Text002.geometry}
           material={materials["Material.004"]}
+          position={[-0.05, 0.81, -0.19]}
+          rotation={[-3.14, 0, 3.11]}
+          scale={[0.66, 6.48, 0.66]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Text001.geometry}
+          material={materials["Material.004"]}
+          position={[-0.05, 0.81, -0.19]}
+          rotation={[-3.14, 0, 3.11]}
+          scale={[0.66, 6.48, 0.66]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Text.geometry}
+          material={materials["Material.004"]}
+          position={[0.73, 0.55, -0.45]}
+          rotation={[-3.14, 0, 3.11]}
+          scale={[1.42, 17.69, 1.42]}
         />
       </group>
+      </Center>
     </group>
   );
 }

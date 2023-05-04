@@ -1,11 +1,12 @@
-import React, { useState, useEffect, Suspense } from "react";
+import React, { useState, useEffect, Suspense, lazy } from "react";
 
-import Intro from "./components/Intro";
-import Timeline from "./components/Timeline";
-import Portfolio from "./components/Portfolio";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
-import Title from "./components/Title";
+
+const Intro = lazy(() => import("./components/Intro"))
+const Timeline = lazy(() => import("./components/Timeline"))
+const Portfolio = lazy(() => import("./components/Portfolio"))
+const Contact = lazy(() => import("./components/Contact"))
+const Footer = lazy(() => import("./components/Footer"))
+const Title = lazy(() => import("./components/Title"))
 
 import { Canvas } from "@react-three/fiber";
 import {
@@ -74,7 +75,7 @@ function App() {
   }, [theme]);
 
   return (
-    <>
+    <div className="main">
       <button
         type="button"
         onClick={handleThemeSwtich}
@@ -83,7 +84,7 @@ function App() {
         {theme === "dark" ? sun : moon}
       </button>
 
-      <div className="bg-gradient-to-r from-slate-50 to-indigo-200 dark:bg-gradient-to-r dark:from-gray-900 dark:to-sky-900 dark:text-stone-300 text-stone-900 min-h-screen font-inter">
+      <div className="bg-gradient-to-r from-slate-50 via-blue-100 to-blue-200 dark:bg-gradient-to-r dark:from-gray-950 dark:to-slate-800 dark:text-stone-300 text-stone-900 min-h-screen font-inter">
         <div className="max-w-5x1 w-11/12 mx-auto">
           <Intro />
           {/* <div className="three-view">
@@ -111,7 +112,7 @@ function App() {
           <Footer />
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
