@@ -24,7 +24,7 @@ export default [
     title: 'Shop Management',
     desc: 'Aplicativo web para gerenciamento de uma loja. Ainda em desenvolvimento',
     imgUrl: 'https://images.ctfassets.net/23aumh6u8s0i/5c2LVJHpVFgNW12LvVSnCg/a789ce83982ed4e63baff797495fc342/laravel-6-crud-app',
-    stack: ['Laravel', 'MySql'],
+    stack: ['Laravel', 'MySql'], 
     github: ''
   },
   {

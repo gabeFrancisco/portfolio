@@ -48,7 +48,7 @@ export default function TimelineItem({ year, title, details, model }) {
               {title}
             </h3>
           </p>
-          <p className="my-2 text-base font-normal text-stone-600 dark:text-stone-300">{details}</p>
+          <p className="my-2 text-base font-normal text-stone-600 dark:text-stone-300 text-justify">{details}</p>
         </li>
       </ol>
     </div>

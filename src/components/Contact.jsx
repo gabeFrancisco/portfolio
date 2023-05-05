@@ -41,12 +41,9 @@ export default function Contact() {
           <button
             className="text-center inline-block px-12 py-3 
           w-max text-base font-medium 
-          rounded-md text-white bg-gradient-to-r from-blue-600 
+          rounded-md text-white bg-gradient-to-r from-blue-700 via-blue-600 to-green-500
           to-cyan-500 drop-shadow-md 
-          dark:bg-gradient-to-r dark:from-gray-800
-          dark:dark:to-sky-700 drop-shadow-md 
-          hover:stroke-white hover:bg-gradient-to-r hover:from-blue-700 
-          hover:to-cyan-600"
+          dark:bg-gradient-to-r dark:from-blue-700 dark:via-blue-600 dark:to-green-600 drop-shadow-md"
           >
             Enviar!
           </button>

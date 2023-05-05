@@ -11,22 +11,29 @@ export default function Intro() {
             flex flex-col items-center lg:flex-row lg:p-10 my-5
             justify-center backdrop-filter: blur(50px); bg-opacity-10 glass"
         >
-          <div className="p-10 lg:p-20 flex flex-col items-center">
+          <div className="p-10 lg:p-20 flex flex-col items-center hover:cursor-pointer">
             <img
               className="w-64 lg:w-80 border-4 rounded-full border-slate-300 object-fill shadow-xl glass"
               src={Me}
               alt=""
+              onClick={() => {
+                window.open("https://github.com/gabeFrancisco", "_blank").focus();
+              }}
             />
           </div>
 
           <div className="flex items-center justify-center flex-col text-center pt-20 pb-6 px-10">
-            <h1 className="text-4xl md:text-7x1 mb-1  
+            <h1
+              className="text-4xl md:text-7x1 mb-1  
             md:mb-3 font-bold dark:text-white bg-gradient-to-r from-blue-800 via-blue-700 to-green-600
-            text-transparent bg-clip-text dark:bg-gradient-to-r dark:from-blue-700 dark:via-blue-300 dark:to-green-400 text-gradient">
+            text-transparent bg-clip-text dark:bg-gradient-to-r dark:from-blue-700 dark:via-blue-300 dark:to-green-400 text-gradient"
+            >
               Olá, me chamo Gabriel Francisco
             </h1>
-            <h3 className="text-base md:text-xl mb-3 font-medium font-bold lg:text-2xl bg-gradient-to-r from-blue-800 via-blue-700 to-green-600
-            text-transparent bg-clip-text dark:bg-gradient-to-r dark:from-blue-700 dark:via-blue-300 dark:to-green-400 text-gradient">
+            <h3
+              className="text-base md:text-xl my-7 font-bold lg:text-2xl bg-gradient-to-r from-blue-800 via-blue-700 to-green-600
+            text-transparent bg-clip-text dark:bg-gradient-to-r dark:from-blue-700 dark:via-blue-300 dark:to-green-400 text-gradient"
+            >
               <TypeAnimation
                 className="text-2xl"
                 sequence={[
@@ -40,7 +47,7 @@ export default function Intro() {
                 repeat={Infinity}
               />
             </h3>
-            <p className="text-md max-w-xl mb-3 font-bold text-slate-700 dark:text-slate-300">
+            <p className="text-md max-w-xl m-3 font-bold text-slate-700 dark:text-slate-300">
               "Apaixonado por tecnologia, resolvendo problemas reais através de
               linhas de código..."
             </p>
@@ -62,7 +69,6 @@ export default function Intro() {
               programador era a minha missão. Programar me fazia e, ainda me faz
               me sentir vivo!
             </p>
-
             {/* <p>
             Então.. dê uma olhada no meu{" "}
             <a

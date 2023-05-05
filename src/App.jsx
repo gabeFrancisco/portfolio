@@ -105,7 +105,6 @@ function App() {
               </Center>
             </Canvas>
           </div> */}
-          <Title>Meus projetos</Title>
           <Portfolio />
           <Timeline />
           <Contact />
