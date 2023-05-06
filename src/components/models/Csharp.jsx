@@ -10,33 +10,33 @@ export default function Model(props) {
   const { nodes, materials } = useGLTF("/portfolio/assets/models/csharp.glb");
   return (
     <group {...props} dispose={null}>
-    <group position={[0,0,0]} scale={0.017}>
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Cylinder_1.geometry}
-        material={materials["Material.001"]}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Cylinder_2.geometry}
-        material={materials["Material.002"]}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Cylinder_3.geometry}
-        material={materials["Material.003"]}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Cylinder_4.geometry}
-        material={materials["Material.004"]}
-      />
+      <group position={[0, 0, 0]} scale={0.017}>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder_1.geometry}
+          material={materials["Material.001"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder_2.geometry}
+          material={materials["Material.002"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder_3.geometry}
+          material={materials["Material.003"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder_4.geometry}
+          material={materials["Material.004"]}
+        />
+      </group>
     </group>
-  </group>
   );
 }
 

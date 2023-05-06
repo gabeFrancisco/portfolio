@@ -84,7 +84,7 @@ function App() {
         {theme === "dark" ? sun : moon}
       </button>
 
-      <div className="bg-gradient-to-r from-slate-50 via-blue-100 to-blue-200 dark:bg-gradient-to-r dark:from-gray-950 dark:to-slate-800 dark:text-stone-300 text-stone-900 min-h-screen font-inter">
+      <div className="bg-gradient-to-r from-slate-50 via-blue-100 to-blue-200 dark:bg-gradient-to-r dark:from-gray-950 dark:to-blue-950 dark:text-stone-300 text-stone-900 min-h-screen font-inter">
         <div className="max-w-5x1 w-11/12 mx-auto">
           <Intro />
           {/* <div className="three-view">
