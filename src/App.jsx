@@ -8,15 +8,6 @@ const Contact = lazy(() => import("./components/Contact"))
 const Footer = lazy(() => import("./components/Footer"))
 const Title = lazy(() => import("./components/Title"))
 
-import { Canvas } from "@react-three/fiber";
-import {
-  Center,
-  Environment,
-  OrbitControls,
-  PresentationControls,
-} from "@react-three/drei";
-import Pc from "./components/models/Pc";
-
 function App() {
   const [theme, setTheme] = useState(null);
 
