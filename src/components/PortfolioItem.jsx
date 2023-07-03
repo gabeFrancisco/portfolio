@@ -10,7 +10,7 @@ export default function PortfolioItem({
   return (
     <div
       className="hover:cursor-pointer rounded-xl m-1 shadow-2xl glass 
-    dark:bg-blue-950 dark:bg-opacity-60 dark:backdrop-filter: 
+    dark:bg-zinc-700 dark:bg-opacity-60 dark:backdrop-filter: 
     blur(80px) flex flex-col"
       onClick={() => {
         window.open(github, "_blank").focus();

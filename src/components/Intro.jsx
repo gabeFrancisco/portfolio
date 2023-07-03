@@ -7,7 +7,7 @@ export default function Intro() {
     <>
       <div className="p-3 flex flex-col items-center lg:flex-row lg:p-10 mb-10  justify-center">
         <div
-          className="bg-blue-600 rounded-xl shadow-lg shadow-blue-900/50 dark:shadow-indigo-500/30
+          className="rounded-xl shadow-lg  dark:bg-zinc-800
             flex flex-col items-center lg:flex-row lg:p-10 my-5
             justify-center backdrop-filter: blur(50px); bg-opacity-10 glass"
         >
@@ -48,23 +48,23 @@ export default function Intro() {
               />
             </h3>
             <p className="text-md max-w-xl m-3 font-bold text-slate-700 dark:text-slate-300">
-              "Apaixonado por tecnologia, resolvendo problemas reais através de
+              "Apaixonado por tecnologia, resolvendo problemas reais por meio de
               linhas de código..."
             </p>
             <br />
             <p className="text-md max-w-xl mb-6 font-medium">
               Como um amante de tecnologia e curioso desde a infância, sempre
-              procurei saber como as coisas funcionavam. Aos 10 anos de idade
+              procurei saber como as coisas funcionavam. Aos 10 anos
               tive meu primeiro contato com um computador e ali começou minha
               jornada. Assim como qualquer criança da minha época, sempre fui
-              aficcionado por video-games. Comecei então a criar meus primeiros
-              jogos para computador("utilizando a infâme engine The Games
+              aficionado por video-games. Comecei então a criar meus primeiros
+              jogos para computador("utilizando a infame engine The Games
               Factory").
             </p>
             <p className="text-md max-w-xl mb-6 font-medium">
               Então, quando fiz 18, depois de longos anos sem contato com
               computação, reascendi a minha paixão quando tive meu primeiro
-              contato com Python. E como de costume, as nossas primeiras linhas
+              contato com Python. Como de costume, as nossas primeiras linhas
               de código nós nunca esquecemos. Decidi finalmente que ser
               programador era a minha missão. Programar me fazia e, ainda me faz
               me sentir vivo!

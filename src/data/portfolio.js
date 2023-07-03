@@ -36,14 +36,14 @@ export default [
   },
   {
     title: 'LandUp Restaurant Suit',
-    desc: 'Meu maior projeto até o momento. Consiste em uma suíte de aplicativos para gerenciamento de restaurantes.',
+    desc: 'Meu maior projeto até o presente momento. Consiste em uma suíte de aplicativos para gerenciamento de restaurantes.',
     imgUrl: '/portfolio/assets/landup.png',
     stack: ['React', 'Flutter', 'Asp.Net Core', 'Redis','MySQL'],
     github: 'https://github.com/gabeFrancisco/RestaurantSuitWeb'
   },
    {
     title: 'Portfólio',
-    desc: 'Você estã acessando ele agora, porém o ponto importante aqui é a inserção de modelos em 3D usando a biblioteca Three.JS e Fiber. Os logos das tecnologias foram feitos por mim através do Blender 3D.',
+    desc: 'Você esta acessando ele agora, porém, o ponto importante aqui é a inserção de modelos em 3D usando a biblioteca Three.JS e Fiber. Os logos das tecnologias foram feitos por mim através do Blender 3D.',
     imgUrl: '/portfolio/assets/portfolio.png',
     stack: ['React', 'Tailwind', 'Vite', 'Three.JS'],
     github: 'https://github.com/gabeFrancisco/portfolio'
