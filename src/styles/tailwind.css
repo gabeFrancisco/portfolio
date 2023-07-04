@@ -53,7 +53,7 @@ html {
   box-shadow:
     2em 4em 6em -2em rgba(0, 0, 0, .5),
     1em 2em 3.5em -2.5em rgba(0, 0, 0, .5);
-   
+
 }
 
 .rotate:hover {
@@ -112,4 +112,12 @@ img:hover {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(20, 59, 84)
+}
+
+.terminal {
+  border: none;
+  outline: none;
+  resize: none;
+  width: 100%;
+  max-width: 100%;
 }

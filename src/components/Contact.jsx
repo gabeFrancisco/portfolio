@@ -3,7 +3,7 @@ import Title from "./Title";
 
 export default function Contact() {
   return (
-    <div className="flex flex-col mb-10 mx-auto flex justify-center">
+    <div className="flex flex-col mb-10 mx-auto justify-center">
       <div className="flex justify-center items-center m-7">
         <Title>Gostou do meu perfil? Entre em contato!</Title>
       </div>

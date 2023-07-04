@@ -1,5 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useState, useEffect, lazy } from "react";
+import Terminal from "./components/Terminal";
 
 const Intro = lazy(() => import("./components/Intro"));
 const Timeline = lazy(() => import("./components/Timeline"));
@@ -9,7 +10,7 @@ const Footer = lazy(() => import("./components/Footer"));
 
 function App() {
   const [theme, setTheme] = useState(null);
-
+  const [terminal, setTerminal] = useState(false)
   useEffect(() => {
     if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
       setTheme("dark");
@@ -21,6 +22,8 @@ function App() {
   const handleThemeSwtich = () => {
     setTheme(theme === "dark" ? "light" : "dark");
   };
+
+  const handleTerminal = () => terminal ? setTerminal(false) : setTerminal(true)
 
   //this is just for testing purposes, not serious
   localStorage.setItem("hello", "Hello world! God bless you!");
@@ -60,7 +63,7 @@ function App() {
     </svg>
   );
 
-  const terminal = (
+  const console = (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
@@ -96,10 +99,10 @@ function App() {
       </button>
       <button
         type="button"
-        onClick={handleThemeSwtich}
+        onClick={handleTerminal}
         className="fixed z-10 right-5 md:right-10 top-20 bg-green-300 text-lg p-1 rounded-lg dark:bg-blue-400"
       >
-        {terminal}
+        {console}
       </button>
 
       <div className="bg-gradient-to-r bg-slate-200 dark:bg-gradient-to-r dark:bg-zinc-900 dark:text-stone-300 text-stone-900 min-h-screen font-inter">
@@ -123,6 +126,7 @@ function App() {
               </Center>
             </Canvas>
           </div> */}
+          {terminal ? <Terminal handleTerminal={handleTerminal}/> : null}
           <Portfolio />
           <Timeline />
           <Contact />
