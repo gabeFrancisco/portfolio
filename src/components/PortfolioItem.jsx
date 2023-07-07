@@ -9,8 +9,8 @@ export default function PortfolioItem({
 }) {
   return (
     <div
-      className="hover:cursor-pointer rounded-xl m-1 shadow-2xl glass 
-    dark:bg-zinc-700 dark:bg-opacity-60 dark:backdrop-filter: 
+      className="hover:cursor-pointer rounded-xl m-1 shadow-2xl bg-gradient-to-br from-slate-100 to-slate-200
+      dark:bg-gradient-to-tr dark:from-zinc-800 dark:to-zinc-700 dark:bg-opacity-60 dark:backdrop-filter: 
     blur(80px) flex flex-col"
       onClick={() => {
         window.open(github, "_blank").focus();
@@ -22,6 +22,7 @@ export default function PortfolioItem({
         }}
         src={imgUrl}
         alt="portfolio"
+        loading="lazy"
         className="p-3 md:h-48 object-contain cursor-pointer overflow-hidden rounded-xl"
       />
       <div className="p-5">

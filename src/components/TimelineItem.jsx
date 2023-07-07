@@ -7,7 +7,7 @@ export default function TimelineItem({ year, title, details, image }) {
   return (
     <div className="flex flex-col lg:flex-row items-center m-5">
       <div className="mb-10 flex flex-col items-center justify-center object-cover w-7/12 lg:w-3/12">
-        <img className="m-10 mx-20" src={image} alt="Logo da tecnologia"/>
+        <img className="m-10 mx-20" loading="lazy" src={image} alt="Logo da tecnologia"/>
       </div>
       <ol className="flex flex-col md-flex-row relative border-l border-stone-200 lg:mx-20">
         <li className="mb-10 ml-4">

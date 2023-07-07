@@ -7,15 +7,16 @@ export default function Intro() {
     <>
       <div className="p-3 flex flex-col items-center lg:flex-row lg:p-10 mb-10  justify-center">
         <div
-          className="rounded-xl shadow-lg  dark:bg-zinc-800
+          className="rounded-xl shadow-lg bg-gradient-to-r from-slate-100 to-slate-200 dark:bg-gradient-to-tr dark:from-zinc-900 dark:to-zinc-700
             flex flex-col items-center lg:flex-row lg:p-10 my-5
-            justify-center backdrop-filter: blur(50px); bg-opacity-10 glass"
+            justify-center; bg-opacity-20"
         >
           <div className="p-10 lg:p-20 flex flex-col items-center hover:cursor-pointer">
             <img
               className="w-64 lg:w-80 border-4 rounded-full border-slate-300 object-fill shadow-xl glass"
               src={Me}
               alt=""
+              loading="lazy"
               onClick={() => {
                 window.open("https://github.com/gabeFrancisco", "_blank").focus();
               }}

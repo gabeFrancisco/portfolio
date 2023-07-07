@@ -9,7 +9,8 @@ export default function Loading(){
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
-            justifyContent: 'center'
+            justifyContent: 'center',
+            border: 'none'
         }}>
             <img src="../../public/assets/favicon.png" className='animate-ping logo'/>
             {/* <div style={{marginTop: '3rem'}}>Carregando</div> */}
