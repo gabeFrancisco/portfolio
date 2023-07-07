@@ -30,7 +30,7 @@ export default [
   {
     title: 'Alicator',
     desc: 'Trata-se de um alimentador automático para gatos(mas serve para qualquer animal hahah), feito com Arduino. Ainda se encontra em desenvolvimento.',
-    imgUrl: 'https://hackaday.com/wp-content/uploads/2016/08/cat-dispensing-food.gif',
+    imgUrl: '/portfolio/assets/alicator.png',
     stack: ['Arduino', 'C++', 'Robótica e Eletrônica'],
     github: ''
   },

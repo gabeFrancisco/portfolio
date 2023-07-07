@@ -23,16 +23,16 @@ export default function Terminal(props) {
     }
   };
   return (
-    <div className="rounded-md fixed inset-0 overflow-y-auto h-full w-full z-50 glass">
+    <div className="rounded-md fixed inset-0 overflow-y-auto h-full w-full z-50 glass-less">
       <div className="flex flex-col items-center mt-32">
         <div className="h-7 bg-zinc-800 w-5/6 rounded-t-md flex flex-row justify-between px-3 text-white">
           <span>Terminal</span>
           <span>genesis@gabedev</span>
           <span style={{cursor: 'pointer'}} onClick={() => props.handleTerminal()}>X</span>
         </div>
-        <div className="h-96 bg-gray-950 w-5/6 rounded-b-md p-3 flex flex-col justify-between">
+        <div className="h-96 bg-neutral-950 w-5/6 rounded-b-md p-3 flex flex-col justify-between bg-opacity-90">
           <textarea
-            className="terminal  bg-gray-950 text-white"
+            className="terminal  bg-neutral-950 bg-opacity-90 text-white"
             spellCheck="false"
             value={terminalData}
             cols="30"
@@ -41,7 +41,7 @@ export default function Terminal(props) {
           <div className="flex flex-row">
             <label className="text-green-400">genesis@gabedev:</label>
             <input
-              className="terminal pl-2 w-72 bg-gray-950 text-white"
+              className="terminal pl-2 w-72 bg-neutral-950 bg-opacity-90 text-white"
               spellCheck="false"
               onChange={(e) => setInputData(e.target.value)}
               onKeyUp={handleEnterPress}

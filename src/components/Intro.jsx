@@ -5,7 +5,7 @@ import { TypeAnimation } from "react-type-animation";
 export default function Intro() {
   return (
     <>
-      <div className="p-3 flex flex-col items-center lg:flex-row lg:p-10 mb-10  justify-center">
+      <header className="p-3 flex flex-col items-center lg:flex-row lg:p-10 mb-10  justify-center">
         <div
           className="rounded-xl shadow-lg bg-gradient-to-r from-slate-100 to-slate-200 dark:bg-gradient-to-tr dark:from-zinc-900 dark:to-zinc-700
             flex flex-col items-center lg:flex-row lg:p-10 my-5
@@ -83,7 +83,7 @@ export default function Intro() {
           </p> */}
           </div>
         </div>
-      </div>
+      </header >
     </>
   );
 }

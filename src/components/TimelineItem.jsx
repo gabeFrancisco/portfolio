@@ -1,7 +1,4 @@
 import React, { Suspense } from "react";
-import { Canvas } from "@react-three/fiber";
-
-import { OrbitControls, Environment, Center, Float } from "@react-three/drei";
 
 export default function TimelineItem({ year, title, details, image }) {
   return (

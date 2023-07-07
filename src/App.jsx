@@ -10,7 +10,7 @@ const Footer = lazy(() => import("./components/Footer"));
 
 function App() {
   const [theme, setTheme] = useState(null);
-  const [terminal, setTerminal] = useState(false)
+  const [terminal, setTerminal] = useState(false);
   useEffect(() => {
     if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
       setTheme("dark");
@@ -23,7 +23,8 @@ function App() {
     setTheme(theme === "dark" ? "light" : "dark");
   };
 
-  const handleTerminal = () => terminal ? setTerminal(false) : setTerminal(true)
+  const handleTerminal = () =>
+    terminal ? setTerminal(false) : setTerminal(true);
 
   //this is just for testing purposes, not serious
   localStorage.setItem("hello", "Hello world! God bless you!");
@@ -108,6 +109,13 @@ function App() {
       <div className="bg-gradient-to-r bg-slate-200 dark:bg-gradient-to-r dark:bg-zinc-900 dark:text-stone-300 text-stone-900 min-h-screen font-inter">
         <div className="max-w-5x1 w-11/12 mx-auto">
           <Intro />
+          <main>
+            {terminal ? <Terminal handleTerminal={handleTerminal} /> : null}
+            <Portfolio />
+            <Timeline />
+            <Contact />
+            <Footer />
+          </main>
           {/* <div className="three-view">
             <Canvas>
               <Environment preset="warehouse" />
@@ -126,11 +134,6 @@ function App() {
               </Center>
             </Canvas>
           </div> */}
-          {terminal ? <Terminal handleTerminal={handleTerminal}/> : null}
-          <Portfolio />
-          <Timeline />
-          <Contact />
-          <Footer />
         </div>
       </div>
     </div>
