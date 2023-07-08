@@ -37,9 +37,10 @@ export default function PortfolioItem({
       <div className="w-full p-4">
         <p>
           {stack?.map((item) => (
-            <span className="inline-block m-1 px-2 py-1 font-semibold border-2 border-stone-700 dark:border-stone-200 rounded-md">
-              {item}
-            </span>
+            // <span className="inline-block m-1 px-2 py-1 font-semibold border-2 border-stone-700 dark:border-stone-200 rounded-md">
+            //   {item}
+            // </span>
+            <i className={`${item} inline-block m-0 px-1 py-1 text-3xl`}></i>
           ))}
         </p>
       </div>

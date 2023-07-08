@@ -9,7 +9,7 @@ const Contact = lazy(() => import("./components/Contact"));
 const Footer = lazy(() => import("./components/Footer"));
 
 function App() {
-  const [theme, setTheme] = useState(null);
+  const [theme, setTheme] = useState('null');
   const [terminal, setTerminal] = useState(false);
   useEffect(() => {
     if (window.matchMedia("(prefers-color-scheme: dark)").matches) {

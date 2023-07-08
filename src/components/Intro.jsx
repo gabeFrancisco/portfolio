@@ -12,6 +12,7 @@ export default function Intro() {
             justify-center; bg-opacity-20"
         >
           <div className="p-10 lg:p-20 flex flex-col items-center hover:cursor-pointer">
+            
             <img
               className="w-64 lg:w-80 border-4 rounded-full border-slate-300 object-fill shadow-xl glass"
               src={Me}
