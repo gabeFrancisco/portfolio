@@ -21,4 +21,3 @@ else{
     </Suspense>
   </React.StrictMode>, rootElement)
 }
-

@@ -14,6 +14,6 @@ export default defineConfig({
   build: {
     rollupOptions: {
       external: '/portfolio/assets'
-    }
+    },
   },
 })

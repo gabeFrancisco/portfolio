@@ -38,6 +38,7 @@
     "vite": "^4.3.2"
   },
   "reactSnap": {
-    "inlineCss": true
+    "inlineCss": true,
+    "source": "./"
   }
 }
