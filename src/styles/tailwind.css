@@ -109,18 +109,18 @@ img:hover {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #1a4a6bb4;
+  background: #4e4e5b;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgba(26, 74, 107, 1);
+  background: #23232a;
   border-radius: 5px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgb(20, 59, 84)
+  background: rgb(43, 80, 123)
 }
 
 .terminal {
@@ -130,4 +130,12 @@ img:hover {
   width: 100%;
   max-width: 100%;
   background: none;
+}
+
+.header-item{
+  transition: transform .2s ease;
+}
+.header-item:hover{
+  transform: scale(1.1);
+  transition: transform .2s ease;
 }

@@ -13,9 +13,9 @@ export default function TimelineItem({ year, title, details, image }) {
             <span className="inline-block px-2 py-1 font-semibold text-white bg-slate-900 dark:text-slate-900 dark:bg-white rounded-md">
               {year}
             </span>
-            <h3 className="text-lg font-semibold text-stone-900 dark:text-white ">
+            <p className="text-lg font-semibold text-stone-900 dark:text-white ">
               {title}
-            </h3>
+            </p>
           </p>
           <p className="my-2 text-base font-normal text-stone-600 dark:text-stone-300 text-justify">
             {details}

@@ -1,6 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useState, useEffect, lazy } from "react";
 import Terminal from "./components/Terminal";
+import Header from "./components/Header";
 
 const Intro = lazy(() => import("./components/Intro"));
 const Timeline = lazy(() => import("./components/Timeline"));
@@ -17,6 +18,7 @@ function App() {
     } else {
       setTheme("light");
     }
+    setTheme('dark')
   }, []);
 
   const handleThemeSwtich = () => {
@@ -25,9 +27,6 @@ function App() {
 
   const handleTerminal = () =>
     terminal ? setTerminal(false) : setTerminal(true);
-
-  //this is just for testing purposes, not serious
-  localStorage.setItem("hello", "Hello world! God bless you!");
 
   const sun = (
     <svg
@@ -94,19 +93,20 @@ function App() {
       <button
         type="button"
         onClick={handleThemeSwtich}
-        className="fixed z-10 right-5 md:right-10 top-4 bg-purple-300 text-lg p-1 rounded-lg dark:bg-yellow-300"
+        className="fixed z-20 right-16 top-2 bg-purple-300 text-lg p-1 rounded-lg dark:bg-yellow-300"
       >
         {theme === "dark" ? sun : moon}
       </button>
       <button
         type="button"
         onClick={handleTerminal}
-        className="fixed z-10 right-5 md:right-10 top-20 bg-green-300 text-lg p-1 rounded-lg dark:bg-blue-400"
+        className="fixed z-20 right-4 top-2 bg-green-300 text-lg p-1 rounded-lg dark:bg-blue-400"
       >
         {console}
       </button>
 
       <div className="bg-gradient-to-r bg-slate-200 dark:bg-gradient-to-r dark:bg-zinc-900 dark:text-stone-300 text-stone-900 min-h-screen font-inter">
+          <Header/>
         <div className="max-w-5x1 w-11/12 mx-auto">
           <Intro />
           <main>

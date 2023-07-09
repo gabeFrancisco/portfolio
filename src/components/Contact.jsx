@@ -3,15 +3,15 @@ import Title from "./Title";
 
 export default function Contact() {
   return (
-    <div className="flex flex-col mb-10 mx-auto justify-center">
-      <div className="flex justify-center items-center m-7">
+    <div id="contact" className="flex flex-col pt-24 mb-10 mx-auto justify-center">
+      <div className="flex justify-center items-center">
         <Title>Gostou do meu perfil? Entre em contato!</Title>
       </div>
       <div className="flex justify-center items-center">
         <form
           action="https://getform.io/f/2ffe61c1-e991-4ca5-8727-2f1f7905a5db"
           method="POST"
-          className="m-4 p-8 flex flex-col items-stretch w-full md:w-7/12 "
+          className="p-8 flex flex-col items-stretch w-full md:w-7/12 "
         >
           <input
             type="text"
