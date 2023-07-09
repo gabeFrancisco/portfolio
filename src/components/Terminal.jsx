@@ -25,7 +25,7 @@ export default function Terminal(props) {
   return (
     <div className="rounded-md fixed inset-0 overflow-y-auto h-full w-full z-50 glass-less">
       <div className="flex flex-col items-center mt-32">
-        <div className="h-7 bg-zinc-800 w-5/6 rounded-t-md flex flex-row justify-between px-3 text-white">
+        <div className="h-7 bg-zinc-800 w-5/6 rounded-t-md flex flex-row justify-between items-stretch px-3 text-white">
           <span>Terminal</span>
           <span>genesis@gabedev</span>
           <span style={{cursor: 'pointer'}} onClick={() => props.handleTerminal()}>X</span>
@@ -36,7 +36,7 @@ export default function Terminal(props) {
             spellCheck="false"
             value={terminalData}
             cols="30"
-            rows="10"
+            rows="15"
           ></textarea>
           <div className="flex flex-row">
             <label className="text-green-400">genesis@gabedev:</label>

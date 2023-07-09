@@ -84,7 +84,7 @@ function App() {
     if (theme === "dark") {
       document.documentElement.classList.add("dark");
     } else {
-      document.documentElement.classList.remove("dark");
+      document.documentElement.classList.remove("dark");''
     }
   }, [theme]);
 
@@ -93,14 +93,14 @@ function App() {
       <button
         type="button"
         onClick={handleThemeSwtich}
-        className="fixed z-20 right-16 top-2 bg-purple-300 text-lg p-1 rounded-lg dark:bg-yellow-300"
+        className="fixed z-20 lg:right-16 right-4 lg:top-2 top-16 bg-purple-300 text-lg p-1 rounded-lg dark:bg-yellow-300"
       >
         {theme === "dark" ? sun : moon}
       </button>
       <button
         type="button"
         onClick={handleTerminal}
-        className="fixed z-20 right-4 top-2 bg-green-300 text-lg p-1 rounded-lg dark:bg-blue-400"
+        className="fixed z-20 right-4 lg:top-2 top-28 bg-green-300 text-lg p-1 rounded-lg dark:bg-blue-400"
       >
         {console}
       </button>
