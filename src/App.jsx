@@ -10,7 +10,7 @@ const Contact = lazy(() => import("./components/Contact"));
 const Footer = lazy(() => import("./components/Footer"));
 
 function App() {
-  const [theme, setTheme] = useState('null');
+  const [theme, setTheme] = useState("null");
   const [terminal, setTerminal] = useState(false);
   useEffect(() => {
     if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
@@ -18,7 +18,7 @@ function App() {
     } else {
       setTheme("light");
     }
-    setTheme('dark')
+    setTheme("dark");
   }, []);
 
   const handleThemeSwtich = () => {
@@ -84,7 +84,8 @@ function App() {
     if (theme === "dark") {
       document.documentElement.classList.add("dark");
     } else {
-      document.documentElement.classList.remove("dark");''
+      document.documentElement.classList.remove("dark");
+      ("");
     }
   }, [theme]);
 
@@ -106,8 +107,10 @@ function App() {
       </button>
 
       <div className="bg-gradient-to-r bg-slate-200 dark:bg-gradient-to-r dark:bg-zinc-950 dark:text-stone-300 text-stone-900 min-h-screen font-inter">
-          <Header/>
-        <div className="max-w-5x1 w-11/12 mx-auto">
+        <Header />
+        
+
+        <div className="lg:px-10 mx-auto">
           <Intro />
           <main>
             {terminal ? <Terminal handleTerminal={handleTerminal} /> : null}

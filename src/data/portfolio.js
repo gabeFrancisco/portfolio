@@ -24,13 +24,14 @@ export default [
   },
   {
     title: "Redux Storage",
-    desc: "App em React feita para fixar meus estudos com a biblioteca de gerenciamento de estados Redux, bem como intregração com API Node.JS(Express) e PostgreSQL",
+    desc: "App em React feita para fixar meus estudos com a biblioteca de gerenciamento de estados Redux, bem como intregração com API ASP.Net e MySql.",
     imgUrl: "/portfolio/assets/redux-storage.png",
     stack: [
       "devicon-react-original colored",
       "devicon-redux-original colored",
-      "devicon-express-original colored",
-      "devicon-postgresql-plain colored",
+      "devicon-csharp-plain colored",
+      "devicon-dotnetcore-plain colored",
+      "devicon-mysql-plain colored"
     ],
     github: "https://github.com/gabeFrancisco/Redux-Storage",
   },
@@ -78,7 +79,7 @@ export default [
     title: "Hash Box",
     desc: "Uma pequena ferramenta para geração de hashes, GUIDs, string em Base64 e senhas Bcrypt. Foi desenvolvido com NextJS e hospedado na própria Vercel.",
     imgUrl: "/portfolio/assets/hashbox.png",
-    stack: ["devicon-react-original colored", "devicon-nextjs-line colored", "devicon-tailwindcss-plain colored"],
+    stack: ["devicon-react-original colored", "devicon-nextjs-line colored", "devicon-tailwindcss-plain colored", "devicon-nodejs-plain colored"],
     github: "https://github.com/gabeFrancisco/hashBox",
   },
 ];
