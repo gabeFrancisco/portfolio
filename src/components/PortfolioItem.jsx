@@ -9,9 +9,8 @@ export default function PortfolioItem({
 }) {
   return (
     <div
-      className="hover:cursor-pointer rounded-xl m-1 shadow-2xl bg-gradient-to-br from-slate-100 to-slate-200
-      dark:bg-gradient-to-tr dark:from-zinc-800 dark:to-zinc-700 dark:bg-opacity-60 dark:backdrop-filter: 
-    blur(80px) flex flex-col justify-between items-center align-middle"
+      className="hover:cursor-pointer rounded-xl m-1 shadow-lg bg-gradient-to-br from-slate-100 to-slate-200
+      dark:bg-gradient-to-tr dark:from-zinc-900 dark:to-zinc-900 dark:bg-opacity-60 flex flex-col justify-between items-center align-middle"
       onClick={() => {
         window.open(github, "_blank").focus();
       }}

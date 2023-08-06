@@ -7,7 +7,7 @@ export default function Intro() {
     <>
       <header id="home" className="p-3 flex flex-col items-center lg:flex-row lg:p-10 mb-10  justify-center">
         <div
-          className="mt-16 rounded-xl shadow-lg bg-gradient-to-r from-slate-100 to-slate-200 dark:bg-gradient-to-tr dark:from-zinc-900 dark:to-zinc-700
+          className="mt-16 rounded-xl shadow-lg bg-gradient-to-r from-slate-100 to-slate-200 dark:bg-gradient-to-tr dark:from-zinc-950 dark:to-zinc-900
             flex flex-col items-center lg:flex-row lg:p-10 my-5
             justify-center; bg-opacity-20"
         >

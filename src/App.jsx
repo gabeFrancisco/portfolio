@@ -105,7 +105,7 @@ function App() {
         {console}
       </button>
 
-      <div className="bg-gradient-to-r bg-slate-200 dark:bg-gradient-to-r dark:bg-zinc-900 dark:text-stone-300 text-stone-900 min-h-screen font-inter">
+      <div className="bg-gradient-to-r bg-slate-200 dark:bg-gradient-to-r dark:bg-zinc-950 dark:text-stone-300 text-stone-900 min-h-screen font-inter">
           <Header/>
         <div className="max-w-5x1 w-11/12 mx-auto">
           <Intro />

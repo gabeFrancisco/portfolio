@@ -71,7 +71,14 @@ export default [
     title: "Portfólio",
     desc: "Você esta acessando ele agora, porém, o ponto importante aqui é a inserção de modelos em 3D usando a biblioteca Three.JS e Fiber. Os logos das tecnologias foram feitos por mim através do Blender 3D.",
     imgUrl: "/portfolio/assets/portfolio.png",
-    stack: ["devicon-react-original colored", "devicon-tailwindcss-plain colored", "Vite", "devicon-threejs-original colored"],
+    stack: ["devicon-react-original colored", "devicon-tailwindcss-plain colored"],
     github: "https://github.com/gabeFrancisco/portfolio",
+  },
+  {
+    title: "Hash Box",
+    desc: "Uma pequena ferramenta para geração de hashes, GUIDs, string em Base64 e senhas Bcrypt. Foi desenvolvido com NextJS e hospedado na própria Vercel.",
+    imgUrl: "/portfolio/assets/hashbox.png",
+    stack: ["devicon-react-original colored", "devicon-nextjs-line colored", "devicon-tailwindcss-plain colored"],
+    github: "https://github.com/gabeFrancisco/hashBox",
   },
 ];
