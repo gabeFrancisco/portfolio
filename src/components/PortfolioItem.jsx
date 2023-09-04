@@ -30,7 +30,7 @@ export default function PortfolioItem({
           src={imgUrl}
           alt="portfolio"
           loading="lazy"
-          className="md:h-44 object-fill cursor-pointer overflow-hidden shadow-xl xl:h-64"
+          className="sm:h-32 md:h-40 lg:h-48 object-fill cursor-pointer overflow-hidden shadow-xl 2xl:h-72"
         />
         <div className="p-5">
           <h3 className="text-lg md:text-xl mb-2 md:mb-3 font-semibold">
