@@ -5,9 +5,9 @@ import { TypeAnimation } from "react-type-animation";
 export default function Intro() {
   return (
     <>
-      <header id="home" className="flex flex-col items-center lg:flex-row lg:p-10 mb-10 justify-center">
+      <div id="home" className="flex flex-col items-center lg:flex-row lg:p-10 mb-10 justify-center">
         <div
-          className="mt-16 rounded-xl shadow-lg bg-gradient-to-r from-slate-100 to-slate-200 dark:bg-gradient-to-tr dark:from-zinc-950 dark:to-zinc-900
+          className="mt-16 mx-10 md:mx-3 rounded-xl shadow-lg bg-gradient-to-r from-slate-100 to-slate-200 dark:bg-gradient-to-tr dark:from-zinc-950 dark:to-zinc-900
             flex flex-col items-center lg:flex-row lg:p-10 my-5
             justify-center; bg-opacity-20"
         >
@@ -84,7 +84,7 @@ export default function Intro() {
           </p> */}
           </div>
         </div>
-      </header >
+      </div>
     </>
   );
 }

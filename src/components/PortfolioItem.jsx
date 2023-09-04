@@ -1,5 +1,7 @@
 import React from "react";
 
+import { motion } from "framer-motion";
+
 export default function PortfolioItem({
   title,
   imgUrl,
@@ -8,7 +10,15 @@ export default function PortfolioItem({
   github,
 }) {
   return (
-    <div
+    <motion.div
+      whileHover={{
+        y: -20,
+      }}
+      transition={{
+        type: "spring",
+        stiffness: 260,
+        damping: 20
+      }}
       className="hover:cursor-pointer rounded-xl m-1 shadow-lg bg-gradient-to-br from-slate-100 to-slate-200
       dark:bg-gradient-to-tr dark:from-zinc-900 dark:to-zinc-900 dark:bg-opacity-60 flex flex-col justify-between"
       onClick={() => {
@@ -17,7 +27,6 @@ export default function PortfolioItem({
     >
       <div className="flex flex-col justify-between items-center">
         <img
-         
           src={imgUrl}
           alt="portfolio"
           loading="lazy"
@@ -28,7 +37,7 @@ export default function PortfolioItem({
             {title}
           </h3>
 
-          <p className="text-base md:text-md mb-3 text-justify">
+          <p className="text-base md:text-md mb-3 text-gray-700 dark:text-gray-400">
             {description}
           </p>
         </div>
@@ -46,6 +55,6 @@ export default function PortfolioItem({
           ))}
         </p>
       </div>
-    </div>
+    </motion.div>
   );
 }

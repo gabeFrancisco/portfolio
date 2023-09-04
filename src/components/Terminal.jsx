@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 
+import { animate, motion } from 'framer-motion'
+
 export default function Terminal(props) {
   const hello = `\nHello! God bless you! This terminal is under construction. It'll be usable soon!\nHowever, the "hello" and "clear" command are the only ones that work!\nType them to display a message or to clear the terminal!!!`;
   const [terminalData, setTerminalData] = useState(hello);
@@ -23,7 +25,7 @@ export default function Terminal(props) {
     }
   };
   return (
-    <div className="rounded-md fixed inset-0 overflow-y-auto h-full w-full z-50 glass-less">
+    <motion.div initial={{scale: 0.1, opacity: 0}} animate={{ scale: 1, opacity: 100}} exit={{ scale: 0.1}} className="rounded-md fixed inset-0 overflow-y-auto h-full w-full z-50 glass-less">
       <div className="flex flex-col items-center mt-32">
         <div className="h-7 bg-zinc-800 w-5/6 rounded-t-md flex flex-row justify-between items-stretch px-3 text-white">
           <span>Terminal</span>
@@ -51,6 +53,6 @@ export default function Terminal(props) {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

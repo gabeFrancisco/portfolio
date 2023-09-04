@@ -62,7 +62,6 @@ export default [
       "devicon-redux-original colored",
       "devicon-flutter-plain colored",
       "devicon-dotnetcore-plain colored",
-      "devicon-redis-plain colored",
       "devicon-mysql-plain colored",
     ],
     github: "https://github.com/gabeFrancisco/RestaurantSuitWeb",
