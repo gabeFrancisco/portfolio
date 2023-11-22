@@ -98,8 +98,19 @@ export default [
       "devicon-tailwindcss-plain colored",
       "devicon-csharp-plain colored",
       "devicon-dotnetcore-plain colored",
-      "devicon-postgresql-plain colored"
+      "devicon-postgresql-plain colored",
+      "devicon-azure-plain colored"
     ],
     github: "https://github.com/gabeFrancisco/DoctorKeyWeb",
+  },
+  {
+    title: "Doctor Key Mobile",
+    desc: "Uma nova versão do Doctor Key para Android/iOS e Desktops, feita em Flutter. Seus dados são gerenciados através da API central do Doctor Key em ASP.Net, através da Azure!",
+    imgUrl: "/portfolio/assets/doctorkeymobile.jpg",
+    stack: [
+      "devicon-flutter-plain colored",
+      "devicon-azure-plain colored"
+    ],
+    github: "https://github.com/gabeFrancisco/DoctorKeyMobile",
   },
 ];
