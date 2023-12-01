@@ -11,7 +11,7 @@ export default function Portfolio() {
     >
       <Title>Meus projetos</Title>
       <div className="flex flex-col md:flex-row items-center justify-center">
-        <div className="grid p-8 m-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 intems-center">
+        <div className="grid p-8 m-6 grid-cols-1 gap-4 intems-center">
           {portfolio.map((project, key) => (
             <PortfolioItem
               key={key}
