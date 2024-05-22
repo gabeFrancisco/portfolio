@@ -13,7 +13,15 @@ export default defineConfig({
   },
   build: {
     rollupOptions: {
-      external: '/portfolio/assets'
+      external: '/portfolio/assets',
+      output: {
+        assetFileNames: (assetInfo) => {
+          if(assetInfo.name == 'style.css'){
+            return '/portfolio/styles/simple.css';
+          } 
+          return assetInfo.name;
+        }
+      }
     },
   },
 })

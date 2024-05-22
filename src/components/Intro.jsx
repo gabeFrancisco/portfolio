@@ -1,5 +1,5 @@
 import React, { Suspense } from "react";
-import Me from "../../public/assets/me.jpg";
+import Me from "../../public/assets/me.webp";
 import { TypeAnimation } from "react-type-animation";
 
 export default function Intro() {
@@ -9,11 +9,7 @@ export default function Intro() {
         id="home"
         className="flex flex-col items-center justify-center mb-10 lg:flex-row lg:p-10"
       >
-        <div
-          className="mt-16 mx-10 md:mx-3 rounded-xl 
-            flex flex-col items-center lg:flex-row lg:p-10 my-5
-            justify-center bg-opacity-20"
-        >
+        <div className="flex flex-col items-center justify-center mx-10 my-5 mt-16 md:mx-3 rounded-xl lg:flex-row lg:p-10 bg-opacity-20">
           <div className="flex flex-col items-center p-10 lg:p-20 hover:cursor-pointer">
             <img
               className="object-fill w-64 border-4 rounded-full shadow-xl lg:w-80 border-slate-300 glass"

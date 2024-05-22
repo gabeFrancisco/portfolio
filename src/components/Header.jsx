@@ -18,6 +18,9 @@ export default function Header() {
 			title: "Contato",
 			url: "#contact"
 		},
+		{
+			
+		}
 	]
   return (
     <header className="w-full flex flex-row lg:justify-start justify-center p-3 bg-zinc-100 bg-opacity-70 dark:bg-zinc-950 dark:border-b dark:border-zinc-700 dark:bg-opacity-90 glass-less fixed shadow-lg z-10">
