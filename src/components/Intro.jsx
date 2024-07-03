@@ -1,23 +1,64 @@
 import React, { Suspense } from "react";
 import Me from "../../public/assets/me.webp";
 import { TypeAnimation } from "react-type-animation";
-import { PerspectiveCamera } from "@react-three/drei";
+import { OrbitControls, PerspectiveCamera, Stage } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
-import { useLoader } from "@react-three/fiber";
-import { GLTFLoader } from "three/examples/jsm/Addons.js";
+import { useGLTF } from "@react-three/drei";
 
 export default function Intro() {
-  const model = useLoader(GLTFLoader, "assets/pc.glb");
+  const { nodes, materials } = useGLTF("assets/pc.glb");
   return (
     <>
       <div
         id="home"
         className="flex flex-col items-center justify-center mb-10 lg:flex-row lg:p-10"
       >
-        <div>
-          <Canvas>
+        <div className="w-full h-full border">
+          <Canvas
+            camera={{
+              fov: 90,
+              near: 0.2,
+              far: 3000,
+              position: [0, 2, 4],
+            }}
+          >
+            <ambientLight />
+            {/* <OrbitControls /> */}
             <PerspectiveCamera>
-              <primitive object={model.scene}></primitive>
+              <Stage preset="rembrandt" intensity={1} environment="city">
+                <group dispose={null}>
+                  <mesh
+                    castShadow
+                    receiveShadow
+                    geometry={nodes.Cube003_1.geometry}
+                    material={materials["Material.003"]}
+                  />
+                  <mesh
+                    castShadow
+                    receiveShadow
+                    geometry={nodes.Cube003_2.geometry}
+                    material={materials["Material.001"]}
+                  />
+                  <mesh
+                    castShadow
+                    receiveShadow
+                    geometry={nodes.Cube003_3.geometry}
+                    material={materials["Material.002"]}
+                  />
+                  <mesh
+                    castShadow
+                    receiveShadow
+                    geometry={nodes.Cube003_4.geometry}
+                    material={materials["Material.006"]}
+                  />
+                  <mesh
+                    castShadow
+                    receiveShadow
+                    geometry={nodes.Cube003_5.geometry}
+                    material={materials["Material.004"]}
+                  />
+                </group>
+              </Stage>
             </PerspectiveCamera>
           </Canvas>
         </div>
