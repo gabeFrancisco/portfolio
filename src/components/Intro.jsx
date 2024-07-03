@@ -1,14 +1,26 @@
 import React, { Suspense } from "react";
 import Me from "../../public/assets/me.webp";
 import { TypeAnimation } from "react-type-animation";
+import { PerspectiveCamera } from "@react-three/drei";
+import { Canvas } from "@react-three/fiber";
+import { useLoader } from "@react-three/fiber";
+import { GLTFLoader } from "three/examples/jsm/Addons.js";
 
 export default function Intro() {
+  const model = useLoader(GLTFLoader, "assets/pc.glb");
   return (
     <>
       <div
         id="home"
         className="flex flex-col items-center justify-center mb-10 lg:flex-row lg:p-10"
       >
+        <div>
+          <Canvas>
+            <PerspectiveCamera>
+              <primitive object={model.scene}></primitive>
+            </PerspectiveCamera>
+          </Canvas>
+        </div>
         <div className="flex flex-col items-center justify-center mx-10 my-5 mt-16 md:mx-3 rounded-xl lg:flex-row lg:p-10 bg-opacity-20">
           <div className="flex flex-col items-center p-10 lg:p-20 hover:cursor-pointer">
             <img
