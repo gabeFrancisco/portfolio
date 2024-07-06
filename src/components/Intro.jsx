@@ -1,25 +1,16 @@
 import React, { Suspense } from "react";
 import Me from "../../public/assets/me.webp";
 import { TypeAnimation } from "react-type-animation";
-import {
-  CameraControls,
-  OrbitControls,
-  PerspectiveCamera,
-  Stage,
-} from "@react-three/drei";
-import { Canvas } from "@react-three/fiber";
-import { useGLTF } from "@react-three/drei";
 
 export default function Intro() {
-  const { nodes, materials } = useGLTF("assets/pc.glb");
   return (
     <>
       <div
         id="home"
-        className="flex flex-col items-center justify-center mb-10 lg:flex-row lg:p-10"
+        className="flex flex-col justify-center mb-10 lg:flex-row lg:p-10"
       >
         <div className="flex flex-col items-center justify-center mx-10 my-5 mt-16 md:mx-3 rounded-xl lg:flex-row lg:p-10 bg-opacity-20">
-          <div className="flex flex-col items-center p-10 lg:p-20 hover:cursor-pointer">
+          <div className="flex flex-col items-center p- lg:p-20 hover:cursor-pointer">
             <img
               className="object-fill w-64 border-4 rounded-full shadow-xl lg:w-80 border-slate-300 glass"
               src={Me}
@@ -38,7 +29,7 @@ export default function Intro() {
               Olá, me chamo Gabriel Francisco
             </h1>
             <h3 className="text-base font-bold text-transparent md:text-xl my-7 lg:text-2xl bg-gradient-to-r from-blue-800 via-blue-700 to-green-600 bg-clip-text dark:bg-gradient-to-r dark:from-blue-700 dark:via-blue-300 dark:to-green-400 text-gradient">
-              <TypeAnimation
+              {/* <TypeAnimation
                 className="text-2xl"
                 sequence={[
                   "Desenvolvedor Fullstack",
@@ -49,7 +40,7 @@ export default function Intro() {
                   2000,
                 ]}
                 repeat={Infinity}
-              />
+              /> */}
             </h3>
 
             <p className="max-w-xl m-3 font-bold text-md text-slate-700 dark:text-slate-300">
@@ -85,62 +76,6 @@ export default function Intro() {
             e veja meus projetos!
           </p> */}
           </div>
-        </div>
-      </div>
-      <div className="px-16">
-        <div className="w-full h-screen">
-          <Canvas
-            camera={{
-              fov: 90,
-              near: 0.2,
-              far: 3000,
-              position: [0, 2, 4],
-            }}
-          >
-            <ambientLight />
-            <OrbitControls
-            // minAzimuthAngle={-Math.PI / 4}
-            // maxAzimuthAngle={Math.PI / 4}
-            // minPolarAngle={Math.PI / 6}
-            // maxPolarAngle={Math.PI - Math.PI / 6}
-            />
-            <PerspectiveCamera>
-              <Stage preset="rembrandt" intensity={0.3} environment="city">
-                <group dispose={null}>
-                  <mesh
-                    castShadow
-                    receiveShadow
-                    geometry={nodes.Cube003_1.geometry}
-                    material={materials["Material.003"]}
-                  />
-                  <mesh
-                    castShadow
-                    receiveShadow
-                    geometry={nodes.Cube003_2.geometry}
-                    material={materials["Material.001"]}
-                  />
-                  <mesh
-                    castShadow
-                    receiveShadow
-                    geometry={nodes.Cube003_3.geometry}
-                    material={materials["Material.002"]}
-                  />
-                  <mesh
-                    castShadow
-                    receiveShadow
-                    geometry={nodes.Cube003_4.geometry}
-                    material={materials["Material.006"]}
-                  />
-                  <mesh
-                    castShadow
-                    receiveShadow
-                    geometry={nodes.Cube003_5.geometry}
-                    material={materials["Material.004"]}
-                  />
-                </group>
-              </Stage>
-            </PerspectiveCamera>
-          </Canvas>
         </div>
       </div>
     </>

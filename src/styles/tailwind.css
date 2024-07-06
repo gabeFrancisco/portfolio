@@ -140,3 +140,11 @@ img:hover {
   transform: scale(1.1);
   transition: transform .2s ease;
 }
+
+.laptop iframe {
+  border-radius: 20px;
+  width: 680px;
+  height: 562px;
+  margin: 0;
+  padding: 0;
+}

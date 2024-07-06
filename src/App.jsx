@@ -4,6 +4,7 @@ import Terminal from "./components/Terminal";
 import Header from "./components/Header";
 
 const Intro = lazy(() => import("./components/Intro"));
+const Computer = lazy(() => import("./components/Computer"));
 const Timeline = lazy(() => import("./components/Timeline"));
 const Portfolio = lazy(() => import("./components/Portfolio"));
 const Contact = lazy(() => import("./components/Contact"));
@@ -94,49 +95,33 @@ function App() {
       <button
         type="button"
         onClick={handleThemeSwtich}
-        className="fixed z-20 lg:right-16 right-4 lg:top-2 top-16 bg-purple-300 text-lg p-1 rounded-lg dark:bg-yellow-300"
+        className="fixed z-20 p-1 text-lg bg-purple-300 rounded-lg lg:right-16 right-4 lg:top-2 top-16 dark:bg-yellow-300"
       >
         {theme === "dark" ? sun : moon}
       </button>
       <button
         type="button"
         onClick={handleTerminal}
-        className="fixed z-20 right-4 lg:top-2 top-28 bg-green-300 text-lg p-1 rounded-lg dark:bg-blue-400"
+        className="fixed z-20 p-1 text-lg bg-green-300 rounded-lg right-4 lg:top-2 top-28 dark:bg-blue-400"
       >
         {console}
       </button>
 
-      <div className="bg-gradient-to-r bg-slate-200 dark:bg-gradient-to-r dark:bg-zinc-950 dark:text-stone-300 text-stone-900 min-h-screen font-inter">
+      <div className="bg-gradient-to-r bg-slate-200 dark:bg-gradient-to-r dark:bg-zinc-950 dark:text-stone-300 text-stone-900 font-inter">
         <Header />
-        
 
-        <div className="lg:px-10 mx-auto">
-          <Intro />
+        <div className="mx-auto lg:px-10">
           <main>
+            <div className="w-full h-screen">
+              <Computer />
+            </div>
             {terminal ? <Terminal handleTerminal={handleTerminal} /> : null}
+            <Intro />
             <Portfolio />
             <Timeline />
             <Contact />
             <Footer />
           </main>
-          {/* <div className="three-view">
-            <Canvas>
-              <Environment preset="warehouse" />
-              <Center scale={20}>
-                <Suspense fallback={null}>
-                  <PresentationControls
-                    global
-                    polar={[-0.1, 0.1]}
-                    azimuth={[-0.2, 0.2]}
-                  >
-                    <OrbitControls>
-                      <Pc />
-                    </OrbitControls>
-                  </PresentationControls>
-                </Suspense>
-              </Center>
-            </Canvas>
-          </div> */}
         </div>
       </div>
     </div>
