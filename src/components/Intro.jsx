@@ -7,7 +7,7 @@ export default function Intro() {
     <>
       <div
         id="home"
-        className="flex flex-col justify-center mb-10 lg:flex-row lg:p-10"
+        className="flex flex-col justify-center lg:flex-row lg:p-10"
       >
         <div className="flex flex-col items-center justify-center mx-10 my-5 mt-16 md:mx-3 rounded-xl lg:flex-row lg:p-10 bg-opacity-20">
           <div className="flex flex-col items-center p- lg:p-20 hover:cursor-pointer">
