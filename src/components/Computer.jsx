@@ -13,7 +13,7 @@ import { Canvas } from "@react-three/fiber";
 import { useGLTF } from "@react-three/drei";
 
 const Computer = () => {
-  const model = useGLTF("../../public/assets/pc.glb");
+  const model = useGLTF("/portfolio/assets/pc.glb");
   return (
     <Canvas
       className="rounded-lg"
