@@ -21,7 +21,7 @@ export default function Header() {
     {},
   ];
   return (
-    <header className="fixed z-50 flex flex-row justify-center w-full p-3 shadow-lg lg:justify-start bg-zinc-100 bg-opacity-70 dark:bg-zinc-950 dark:border-b dark:border-zinc-700 dark:bg-opacity-90 glass-less">
+    <header className="fixed z-10 flex flex-row justify-center w-full p-3 shadow-lg lg:justify-start bg-zinc-100 bg-opacity-70 dark:bg-zinc-950 dark:border-b dark:border-zinc-700 dark:bg-opacity-90 glass-less">
       <ul className="flex flex-row items-center mx-10">
         {anchors.map((anchor, key) => (
           <li key={key} className=" header-item">

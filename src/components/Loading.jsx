@@ -1,19 +1,21 @@
-import React from 'react'
-import Title from './Title'
+import React from "react";
+import Title from "./Title";
 
-export default function Loading(){
-    return(
-        <div style={{
-            width: '100vw',
-            height: '100vh',
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            justifyContent: 'center',
-            border: 'none'
-        }}>
-            <img src="../../public/assets/favicon.png" className='animate-ping logo'/>
-            {/* <div style={{marginTop: '3rem'}}>Carregando</div> */}
-        </div>
-    )
+export default function Loading() {
+  return (
+    <div
+      style={{
+        width: "100vw",
+        height: "100vh",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+        border: "none",
+      }}
+    >
+      <img src="/portfolio/assets/favicon.png" className="animate-ping logo" />
+      {/* <div style={{marginTop: '3rem'}}>Carregando</div> */}
+    </div>
+  );
 }

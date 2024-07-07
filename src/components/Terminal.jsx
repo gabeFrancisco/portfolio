@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-import { animate, motion } from 'framer-motion'
+import { animate, motion } from "framer-motion";
 
 export default function Terminal(props) {
   const hello = `\nHello! God bless you! This terminal is under construction. It'll be usable soon!\nHowever, the "hello" and "clear" command are the only ones that work!\nType them to display a message or to clear the terminal!!!`;
@@ -25,16 +25,26 @@ export default function Terminal(props) {
     }
   };
   return (
-    <motion.div initial={{scale: 0.1, opacity: 0}} animate={{ scale: 1, opacity: 100}} exit={{ scale: 0.1}} className="rounded-md fixed inset-0 overflow-y-auto h-full w-full z-50 glass-less">
+    <motion.div
+      initial={{ scale: 0.1, opacity: 0 }}
+      animate={{ scale: 1, opacity: 100 }}
+      exit={{ scale: 0.1 }}
+      className="fixed inset-0 z-50 w-full h-full overflow-y-auto rounded-md glass-less"
+    >
       <div className="flex flex-col items-center mt-32">
-        <div className="h-7 bg-zinc-800 w-5/6 rounded-t-md flex flex-row justify-between items-stretch px-3 text-white">
+        <div className="flex flex-row items-stretch justify-between w-5/6 px-3 text-white border-t border-gray-600 rounded-t-sm bg-gradient-to-r from-gray-900 to-sky-900 h-7">
           <span>Terminal</span>
           <span>genesis@gabedev</span>
-          <span style={{cursor: 'pointer'}} onClick={() => props.handleTerminal()}>X</span>
+          <span
+            onClick={() => props.handleTerminal()}
+            className="cursor-pointer hover:text-red-400"
+          >
+            X
+          </span>
         </div>
-        <div className="h-96 bg-neutral-950 w-5/6 rounded-b-md p-3 flex flex-col justify-between bg-opacity-90">
+        <div className="flex flex-col justify-between w-5/6 p-3 h-96 bg-neutral-950 rounded-b-md bg-opacity-90">
           <textarea
-            className="terminal  bg-neutral-950 bg-opacity-90 text-white"
+            className="text-white terminal bg-neutral-950 bg-opacity-90"
             spellCheck="false"
             value={terminalData}
             cols="30"
@@ -43,7 +53,7 @@ export default function Terminal(props) {
           <div className="flex flex-row">
             <label className="text-green-400">genesis@gabedev:</label>
             <input
-              className="terminal pl-2 w-72 bg-neutral-950 bg-opacity-90 text-white"
+              className="pl-2 text-white terminal w-72 bg-neutral-950 bg-opacity-90"
               spellCheck="false"
               onChange={(e) => setInputData(e.target.value)}
               onKeyUp={handleEnterPress}
