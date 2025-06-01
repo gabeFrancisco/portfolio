@@ -21,19 +21,19 @@ export default [
     ],
     github: "https://github.com/gabeFrancisco/InvoiceIssuer",
   },
-  {
-    title: "Redux Storage",
-    desc: "App em React feita para fixar meus estudos com a biblioteca de gerenciamento de estados Redux, bem como intregração com API ASP.Net e MySql.",
-    imgUrl: "/portfolio/assets/redux-storage.png",
-    stack: [
-      "devicon-react-original colored",
-      "devicon-redux-original colored",
-      "devicon-csharp-plain colored",
-      "devicon-dotnetcore-plain colored",
-      "devicon-mysql-plain colored",
-    ],
-    github: "https://github.com/gabeFrancisco/Redux-Storage",
-  },
+  // {
+  //   title: "Redux Storage",
+  //   desc: "App em React feita para fixar meus estudos com a biblioteca de gerenciamento de estados Redux, bem como intregração com API ASP.Net e MySql.",
+  //   imgUrl: "/portfolio/assets/redux-storage.png",
+  //   stack: [
+  //     "devicon-react-original colored",
+  //     "devicon-redux-original colored",
+  //     "devicon-csharp-plain colored",
+  //     "devicon-dotnetcore-plain colored",
+  //     "devicon-mysql-plain colored",
+  //   ],
+  //   github: "https://github.com/gabeFrancisco/Redux-Storage",
+  // },
   // {
   //   title: "Shop Management",
   //   desc: "Aplicativo web para gerenciamento de uma loja. Ainda em desenvolvimento",
@@ -112,5 +112,25 @@ export default [
       "devicon-azure-plain colored"
     ],
     github: "https://github.com/gabeFrancisco/DoctorKeyMobile",
+  },
+  {
+    title: "Ellyon",
+    desc: "Site institucional para meu projeto e startup que fiz com amigos.",
+    imgUrl: "/portfolio/assets/ellyon.png",
+    stack: [
+      "devicon-nextjs-line colored",
+      "devicon-tailwindcss-plain colored",
+    ],
+    github: "https://www.ellyon.com.br",
+  },
+  {
+    title: "Chaveiro Sul Automotivo",
+    desc: "Uma site institucional que fiz para um de meus clientes utilizando NextJS e Tailwind.",
+    imgUrl: "/portfolio/assets/chaveirosul.png",
+    stack: [
+      "devicon-nextjs-line colored",
+      "devicon-tailwindcss-plain colored",
+    ],
+    github: "https://www.chaveirosulautomotivo.com.br",
   },
 ];
