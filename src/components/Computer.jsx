@@ -59,7 +59,7 @@ const Computer = () => {
                   zIndexRange={[0, 0]}
                 >
                   <iframe
-                    src="https://www.google.com/webhp?igu=1"
+                    src="https://gabrielos.netlify.app/"
                     frameborder="0"
                   ></iframe>
                 </Html>
