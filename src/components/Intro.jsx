@@ -1,5 +1,6 @@
 import React, { Suspense } from "react";
 import Me from "../../public/assets/me.webp";
+import Unisinos from "../../public/assets/unisinos.png"
 import { TypeAnimation } from "react-type-animation";
 
 export default function Intro() {
@@ -77,6 +78,13 @@ export default function Intro() {
           </p> */}
           </div>
         </div>
+      </div>
+      <div className="flex flex-col justify-center items-center w-full">
+        <h1 className="mb-1 text-5xl font-bold text-transparent md:text-7x1 md:mb-3 dark:text-white bg-gradient-to-r from-blue-800 via-blue-700 to-green-600 bg-clip-text dark:bg-gradient-to-r dark:from-blue-700 dark:via-blue-300 dark:to-green-400 text-gradient">
+          Minha formação
+        </h1>
+        <p className="my-5 text-xl">Sou formando em Análise e Desenvolvimento de Sistemas na Unisinos. </p>
+        <img src={Unisinos} alt="Unisinos" className="w-80 mt-5" />
       </div>
     </>
   );
