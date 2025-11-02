@@ -20,9 +20,9 @@ const Computer = () => {
       className="rounded-lg"
       camera={{
         fov: 60,
-        near: 1,
+        near: 0.7,
         far: 2500,
-        position: [0, 2, 4],
+        position: [0, 1, 4],
       }}
     >
       {/* <ambientLight /> */}
