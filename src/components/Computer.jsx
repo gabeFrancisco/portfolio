@@ -1,7 +1,9 @@
 import React from "react";
 
 import {
+  Bounds,
   CameraControls,
+  Center,
   Environment,
   Html,
   OrbitControls,
@@ -19,38 +21,52 @@ const Computer = () => {
       // frameloop="demand"
       className="rounded-lg"
       camera={{
-        fov: 60,
-        near: 0.7,
-        far: 2500,
-        position: [0, 1, 4],
+        fov: 45,
+        near: 0.1,
+        far: 1000,
+        position: [0, 1, 2],
       }}
     >
       {/* <ambientLight /> */}
+      {/* <PerspectiveCamera> */}
 
-      <PerspectiveCamera>
-        {/* <OrbitControls
-        // minAzimuthAngle={-Math.PI / 9}
-        // maxAzimuthAngle={Math.PI / 9}
-        // minPolarAngle={Math.PI / 3}
-        // maxPolarAngle={Math.PI - Math.PI / 2}
-        /> */}
-        {/* <Environment preset=""/> */}
-        <PresentationControls
+      <OrbitControls
+        enablePan={false} // Desabilita arrastar lateralmente
+        enableZoom={true} // Habilita o zoom
+        makeDefault // Define como o controlador principal
+        minDistance={0.2} // Limite mínimo de zoom (perto)
+        maxDistance={2} // Limite máximo de zoom (longe)
+        enableDamping={true} // O "suave" do movimento
+        dampingFactor={0.05}
+        target={[0, 0.7, 0]}
+        minAzimuthAngle={-Math.PI / 6}
+        maxAzimuthAngle={Math.PI / 6}
+        // Limites Verticais (Cima/Baixo)
+        minPolarAngle={Math.PI / 3}
+        maxPolarAngle={Math.PI / 2}
+      />
+      {/* <Bounds fit clip observe margin={0.18}> */}
+      {/* <PresentationControls
           global
           config={{ mass: 1, tension: 50, friction: 12 }}
-        >
-          <Stage
-            preset="rembrandt"
-            shadows="contact"
-            intensity={0.5}
-            environment="sunset"
-            adjustCamera
-          >
+        > */}
+      <Stage
+        preset="rembrandt"
+        shadows="contact"
+        intensity={0.2}
+        environment="sunset"
+        adjustCamera={false}
+      >
+        <Bounds fit clip observe margin={0.25}>
+          <Center>
             <group rotation={[-0.2, 4.71, 0]}>
               <primitive object={model.scene}>
+                <mesh position={[0.066, 0.104, -0.0005]} visible={false}>
+                  <boxGeometry args={[0.5, 0.7, 0.01]} />
+                </mesh>
                 <Html
                   // as="div"
-                  occlude
+                  // occlude
                   wrapperClass="laptop"
                   distanceFactor={0.08}
                   position={[0.066, 0.104, -0.0005]}
@@ -65,9 +81,12 @@ const Computer = () => {
                 </Html>
               </primitive>
             </group>
-          </Stage>
-        </PresentationControls>
-      </PerspectiveCamera>
+          </Center>
+        </Bounds>
+      </Stage>
+      {/* </PresentationControls> */}
+      {/* </Bounds> */}
+      {/* </PerspectiveCamera> */}
     </Canvas>
   );
 };

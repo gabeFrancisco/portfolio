@@ -14,7 +14,7 @@ export default function Loading() {
         border: "none",
       }}
     >
-      <img src="/portfolio/assets/favicon.png" className="animate-ping logo" />
+      <img src="/portfolio/public/assets/favicon.png" className="animate-ping logo" />
       {/* <div style={{marginTop: '3rem'}}>Carregando</div> */}
     </div>
   );
