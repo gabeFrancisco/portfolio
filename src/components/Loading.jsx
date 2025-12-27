@@ -1,5 +1,6 @@
 import React from "react";
 import Title from "./Title";
+import Gabrielos from '../../public/assets/gabrielos.png'
 
 export default function Loading() {
   return (
@@ -14,7 +15,7 @@ export default function Loading() {
         border: "none",
       }}
     >
-      <img src="/portfolio/public/assets/favicon.png" className="animate-ping logo" />
+      <img src={Gabrielos} className="animate-pulse logo" />
       {/* <div style={{marginTop: '3rem'}}>Carregando</div> */}
     </div>
   );

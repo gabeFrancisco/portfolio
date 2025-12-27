@@ -111,7 +111,7 @@ function App() {
         <Header />
 
         <div className="mx-auto lg:px-10 flex flex-col items-center justify-center">
-          <div className="w-5/6 h-screen">
+          <div className="w-full px-10 md:px:16 lg:px-32 h-screen">
             <Computer />
           </div>
           {terminal ? <Terminal handleTerminal={handleTerminal} /> : null}
