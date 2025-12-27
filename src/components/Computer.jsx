@@ -57,15 +57,15 @@ const Computer = () => {
         environment="sunset"
         adjustCamera={false}
       >
-        <Bounds fit clip observe margin={0.25}>
-          <Center>
+        <Bounds fit clip observe margin={0.22}>
+          {/* <Center> */}
             <group rotation={[-0.2, 4.71, 0]}>
               <primitive object={model.scene}>
                 <mesh position={[0.066, 0.104, -0.0005]} visible={false}>
                   <boxGeometry args={[0.5, 0.7, 0.01]} />
                 </mesh>
                 <Html
-                  // as="div"
+                  as="div"
                   // occlude
                   wrapperClass="laptop"
                   distanceFactor={0.08}
@@ -81,7 +81,7 @@ const Computer = () => {
                 </Html>
               </primitive>
             </group>
-          </Center>
+          {/* </Center> */}
         </Bounds>
       </Stage>
       {/* </PresentationControls> */}
