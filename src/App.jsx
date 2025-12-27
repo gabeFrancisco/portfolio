@@ -110,18 +110,16 @@ function App() {
       <div className="bg-gradient-to-r bg-slate-200 dark:bg-gradient-to-r dark:bg-zinc-950 dark:text-stone-300 text-stone-900 font-inter">
         <Header />
 
-        <div className="mx-auto lg:px-10">
-          <main>
-            <div className="w-full h-screen">
-              <Computer />
-            </div>
-            {terminal ? <Terminal handleTerminal={handleTerminal} /> : null}
-            <Intro />
-            <Portfolio />
-            <Timeline />
-            <Contact />
-            <Footer />
-          </main>
+        <div className="mx-auto lg:px-10 flex flex-col items-center justify-center">
+          <div className="w-5/6 h-screen">
+            <Computer />
+          </div>
+          {terminal ? <Terminal handleTerminal={handleTerminal} /> : null}
+          <Intro />
+          <Portfolio />
+          <Timeline />
+          <Contact />
+          <Footer />
         </div>
       </div>
     </div>
