@@ -1,6 +1,6 @@
 import React, { Suspense } from "react";
 import Me from "../../public/assets/me.webp";
-import Unisinos from "../../public/assets/unisinos.png"
+import Unisinos from "../../public/assets/unisinos.png";
 import { TypeAnimation } from "react-type-animation";
 
 export default function Intro() {
@@ -83,7 +83,18 @@ export default function Intro() {
         <h1 className="mb-1 text-5xl font-bold text-transparent md:text-7x1 md:mb-3 dark:text-white bg-gradient-to-r from-blue-800 via-blue-700 to-green-600 bg-clip-text dark:bg-gradient-to-r dark:from-blue-700 dark:via-blue-300 dark:to-green-400 text-gradient">
           Minha formação
         </h1>
-        <p className="my-5 text-xl">Sou formando em Análise e Desenvolvimento de Sistemas na Unisinos. </p>
+        <p className="my-5 text-xl">
+          Sou formando em Análise e Desenvolvimento de Sistemas na Unisinos.{" "}
+        </p>
+        <p className="mx-32 text-center">
+          Sou apaixonado pelo mundo da tecnologia e estou construindo minha
+          carreira como desenvolvedor através do curso de Análise e
+          Desenvolvimento de Sistemas na Unisinos. Meu objetivo é utilizar minha
+          crescente base de conhecimento em programação, análise e design de
+          sistemas para criar experiências digitais intuitivas e funcionais.
+          Estou aberto a novas tecnologias e pronto para colaborar em projetos
+          que exijam criatividade e excelência técnica.
+        </p>
         <img src={Unisinos} alt="Unisinos" className="w-80 mt-5" />
       </div>
     </>
